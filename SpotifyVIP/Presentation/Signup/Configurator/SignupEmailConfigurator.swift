@@ -12,6 +12,10 @@ final class SignupEmailConfigurator {
     
     public func configure(_ viewController: SignupEmailViewController) {
         let router = SignupEmailRouter(viewController: viewController)
+        let presenter = SignupEmailPresenter(output: viewController)
+        let interactor = SignupEmailInteractor(output: presenter)
+
+        viewController.output = interactor
         viewController.router = router
     }
 }

@@ -3,18 +3,50 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */; };
 		1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614226BFECF10085133C /* AppDelegate.swift */; };
 		1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614426BFECF10085133C /* SceneDelegate.swift */; };
-		1F2A614726BFECF10085133C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614626BFECF10085133C /* ViewController.swift */; };
-		1F2A614A26BFECF10085133C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A614826BFECF10085133C /* Main.storyboard */; };
 		1F2A614C26BFECF20085133C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A614B26BFECF20085133C /* Assets.xcassets */; };
 		1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A614D26BFECF20085133C /* LaunchScreen.storyboard */; };
 		1F2A615A26BFECF20085133C /* SpotifyVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A615926BFECF20085133C /* SpotifyVIPTests.swift */; };
 		1F2A616526BFECF20085133C /* SpotifyVIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */; };
+		1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F17E26C14764000B2B0E /* OnBoardingConfigurator.swift */; };
+		1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F18626C1480E000B2B0E /* OnBoardingRouter.swift */; };
+		1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */; };
+		1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */; };
+		1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */; };
+		1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */; };
+		1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */; };
+		1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92173F26BFFE0800ED80F0 /* CommonUI.swift */; };
+		1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92174726C0017800ED80F0 /* CommonStrings.swift */; };
+		1F92174C26C002C500ED80F0 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813426BFF6E300008AEA /* Gotham-Black.otf */; };
+		1F92175026C002D600ED80F0 /* Gotham-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813326BFF6E300008AEA /* Gotham-Bold.otf */; };
+		1F92175426C002E600ED80F0 /* Gotham-BookItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813526BFF6E300008AEA /* Gotham-BookItalic.otf */; };
+		1F92175826C002E800ED80F0 /* Gotham-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813826BFF6E300008AEA /* Gotham-Light.otf */; };
+		1F92175C26C002EB00ED80F0 /* Gotham-Thin.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8814226BFF6E400008AEA /* Gotham-Thin.otf */; };
+		1F92176026C002ED00ED80F0 /* Gotham-ThinItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813C26BFF6E400008AEA /* Gotham-ThinItalic.otf */; };
+		1F92176426C002EF00ED80F0 /* Gotham-UltraItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813626BFF6E300008AEA /* Gotham-UltraItalic.otf */; };
+		1F92176826C002F200ED80F0 /* Gotham-XLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8814026BFF6E400008AEA /* Gotham-XLight.otf */; };
+		1F92176C26C002F400ED80F0 /* Gotham-XLightItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813A26BFF6E400008AEA /* Gotham-XLightItalic.otf */; };
+		1F92177026C002F600ED80F0 /* GothamBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813726BFF6E300008AEA /* GothamBold.ttf */; };
+		1F92177426C002F900ED80F0 /* GothamBoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813E26BFF6E400008AEA /* GothamBoldItalic.ttf */; };
+		1F92177826C002FA00ED80F0 /* GothamBook.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8814126BFF6E400008AEA /* GothamBook.ttf */; };
+		1F92177C26C002FD00ED80F0 /* GothamBookItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813926BFF6E300008AEA /* GothamBookItalic.ttf */; };
+		1F92178026C002FF00ED80F0 /* GothamLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813D26BFF6E400008AEA /* GothamLight.ttf */; };
+		1F92178426C0030100ED80F0 /* GothamLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813F26BFF6E400008AEA /* GothamLightItalic.ttf */; };
+		1F92178826C0030400ED80F0 /* GothamMedium_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813B26BFF6E400008AEA /* GothamMedium_1.ttf */; };
+		1F92178C26C0030600ED80F0 /* GothamMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813226BFF6E300008AEA /* GothamMedium.ttf */; };
+		1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */; };
+		1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8812926BFF55D00008AEA /* CommonColors.swift */; };
+		1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8814626BFF96E00008AEA /* CommonView.swift */; };
+		1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8815226BFFA5800008AEA /* CommonAssets.swift */; };
+		3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */; };
+		A8E32375AA3CCA0F319587A1 /* Pods_SpotifyVIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */; };
+		FF1AD7301F523D687467C573 /* Pods_SpotifyVIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +67,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		07067678BE78A557A24A50CF /* Pods-SpotifyVIPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIPTests.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIPTests/Pods-SpotifyVIPTests.release.xcconfig"; sourceTree = "<group>"; };
+		120BB7E52008BAA1DDC19630 /* Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP-SpotifyVIPUITests/Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1222927BB13C51AC93E4CAFB /* Pods-SpotifyVIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.release.xcconfig"; sourceTree = "<group>"; };
+		1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailPresenter.swift; sourceTree = "<group>"; };
 		1F2A613F26BFECF10085133C /* SpotifyVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A614226BFECF10085133C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F2A614426BFECF10085133C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1F2A614626BFECF10085133C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		1F2A614926BFECF10085133C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1F2A614B26BFECF20085133C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F2A614E26BFECF20085133C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F2A615026BFECF20085133C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +83,42 @@
 		1F2A616026BFECF20085133C /* SpotifyVIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyVIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyVIPUITests.swift; sourceTree = "<group>"; };
 		1F2A616626BFECF20085133C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F60F17E26C14764000B2B0E /* OnBoardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingConfigurator.swift; sourceTree = "<group>"; };
+		1F60F18626C1480E000B2B0E /* OnBoardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingRouter.swift; sourceTree = "<group>"; };
+		1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewController.swift; sourceTree = "<group>"; };
+		1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNavigationExtensions.swift; sourceTree = "<group>"; };
+		1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailConfigurator.swift; sourceTree = "<group>"; };
+		1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailRouter.swift; sourceTree = "<group>"; };
+		1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractor.swift; sourceTree = "<group>"; };
+		1F92173F26BFFE0800ED80F0 /* CommonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUI.swift; sourceTree = "<group>"; };
+		1F92174726C0017800ED80F0 /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
+		1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		1FB8812926BFF55D00008AEA /* CommonColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColors.swift; sourceTree = "<group>"; };
+		1FB8813226BFF6E300008AEA /* GothamMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamMedium.ttf; sourceTree = "<group>"; };
+		1FB8813326BFF6E300008AEA /* Gotham-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Bold.otf"; sourceTree = "<group>"; };
+		1FB8813426BFF6E300008AEA /* Gotham-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Black.otf"; sourceTree = "<group>"; };
+		1FB8813526BFF6E300008AEA /* Gotham-BookItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-BookItalic.otf"; sourceTree = "<group>"; };
+		1FB8813626BFF6E300008AEA /* Gotham-UltraItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-UltraItalic.otf"; sourceTree = "<group>"; };
+		1FB8813726BFF6E300008AEA /* GothamBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBold.ttf; sourceTree = "<group>"; };
+		1FB8813826BFF6E300008AEA /* Gotham-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Light.otf"; sourceTree = "<group>"; };
+		1FB8813926BFF6E300008AEA /* GothamBookItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBookItalic.ttf; sourceTree = "<group>"; };
+		1FB8813A26BFF6E400008AEA /* Gotham-XLightItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-XLightItalic.otf"; sourceTree = "<group>"; };
+		1FB8813B26BFF6E400008AEA /* GothamMedium_1.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamMedium_1.ttf; sourceTree = "<group>"; };
+		1FB8813C26BFF6E400008AEA /* Gotham-ThinItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-ThinItalic.otf"; sourceTree = "<group>"; };
+		1FB8813D26BFF6E400008AEA /* GothamLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamLight.ttf; sourceTree = "<group>"; };
+		1FB8813E26BFF6E400008AEA /* GothamBoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBoldItalic.ttf; sourceTree = "<group>"; };
+		1FB8813F26BFF6E400008AEA /* GothamLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamLightItalic.ttf; sourceTree = "<group>"; };
+		1FB8814026BFF6E400008AEA /* Gotham-XLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-XLight.otf"; sourceTree = "<group>"; };
+		1FB8814126BFF6E400008AEA /* GothamBook.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamBook.ttf; sourceTree = "<group>"; };
+		1FB8814226BFF6E400008AEA /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
+		1FB8814626BFF96E00008AEA /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
+		1FB8815226BFFA5800008AEA /* CommonAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAssets.swift; sourceTree = "<group>"; };
+		26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP_SpotifyVIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.debug.xcconfig"; sourceTree = "<group>"; };
+		8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIPTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E83B339A036C0A9037F4758C /* Pods-SpotifyVIPTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIPTests.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIPTests/Pods-SpotifyVIPTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F4573C26D4E75254075099E7 /* Pods-SpotifyVIP-SpotifyVIPUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP-SpotifyVIPUITests.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP-SpotifyVIPUITests/Pods-SpotifyVIP-SpotifyVIPUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF1AD7301F523D687467C573 /* Pods_SpotifyVIP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +134,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8E32375AA3CCA0F319587A1 /* Pods_SpotifyVIPTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +142,77 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F22710E26C3180900F279BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F22710F26C3181000F279BC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1F60F17E26C14764000B2B0E /* OnBoardingConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1F22711326C3181C00F279BC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1F60F18626C1480E000B2B0E /* OnBoardingRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1F22711426C3182300F279BC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F22711526C3182A00F279BC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1F22711926C3183200F279BC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1F22711A26C3183A00F279BC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1F22711B26C3184A00F279BC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		1F2A613626BFECF10085133C = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +220,8 @@
 				1F2A615826BFECF20085133C /* SpotifyVIPTests */,
 				1F2A616326BFECF20085133C /* SpotifyVIPUITests */,
 				1F2A614026BFECF10085133C /* Products */,
+				773B66AF08A7F84241E13A41 /* Pods */,
+				CA7CDE72B2138E702B1D36A1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,11 +238,11 @@
 		1F2A614126BFECF10085133C /* SpotifyVIP */ = {
 			isa = PBXGroup;
 			children = (
-				1F2A614226BFECF10085133C /* AppDelegate.swift */,
-				1F2A614426BFECF10085133C /* SceneDelegate.swift */,
-				1F2A614626BFECF10085133C /* ViewController.swift */,
-				1F2A614826BFECF10085133C /* Main.storyboard */,
+				1FB8812826BFF54600008AEA /* Common */,
+				1F2A617526BFED270085133C /* Application */,
+				1F2A617626BFED430085133C /* Presentation */,
 				1F2A614B26BFECF20085133C /* Assets.xcassets */,
+				1FB8813126BFF66000008AEA /* fonts */,
 				1F2A614D26BFECF20085133C /* LaunchScreen.storyboard */,
 				1F2A615026BFECF20085133C /* Info.plist */,
 			);
@@ -128,6 +267,106 @@
 			path = SpotifyVIPUITests;
 			sourceTree = "<group>";
 		};
+		1F2A617526BFED270085133C /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				1F2A614226BFECF10085133C /* AppDelegate.swift */,
+				1F2A614426BFECF10085133C /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		1F2A617626BFED430085133C /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8811626BFF34500008AEA /* OnBoarding */,
+				1F60F19026C14A52000B2B0E /* Signup */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1F60F19026C14A52000B2B0E /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1F22711426C3182300F279BC /* View */,
+				1F22711526C3182A00F279BC /* Configurator */,
+				1F22711926C3183200F279BC /* Router */,
+				1F22711A26C3183A00F279BC /* Interactor */,
+				1F22711B26C3184A00F279BC /* Presenter */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		1FB8811626BFF34500008AEA /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				1F22710E26C3180900F279BC /* View */,
+				1F22710F26C3181000F279BC /* Configurator */,
+				1F22711326C3181C00F279BC /* Router */,
+			);
+			path = OnBoarding;
+			sourceTree = "<group>";
+		};
+		1FB8812826BFF54600008AEA /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8812926BFF55D00008AEA /* CommonColors.swift */,
+				1FB8814626BFF96E00008AEA /* CommonView.swift */,
+				1FB8815226BFFA5800008AEA /* CommonAssets.swift */,
+				1F92173F26BFFE0800ED80F0 /* CommonUI.swift */,
+				1F92174726C0017800ED80F0 /* CommonStrings.swift */,
+				1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1FB8813126BFF66000008AEA /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8813426BFF6E300008AEA /* Gotham-Black.otf */,
+				1FB8813326BFF6E300008AEA /* Gotham-Bold.otf */,
+				1FB8813526BFF6E300008AEA /* Gotham-BookItalic.otf */,
+				1FB8813826BFF6E300008AEA /* Gotham-Light.otf */,
+				1FB8814226BFF6E400008AEA /* Gotham-Thin.otf */,
+				1FB8813C26BFF6E400008AEA /* Gotham-ThinItalic.otf */,
+				1FB8813626BFF6E300008AEA /* Gotham-UltraItalic.otf */,
+				1FB8814026BFF6E400008AEA /* Gotham-XLight.otf */,
+				1FB8813A26BFF6E400008AEA /* Gotham-XLightItalic.otf */,
+				1FB8813726BFF6E300008AEA /* GothamBold.ttf */,
+				1FB8813E26BFF6E400008AEA /* GothamBoldItalic.ttf */,
+				1FB8814126BFF6E400008AEA /* GothamBook.ttf */,
+				1FB8813926BFF6E300008AEA /* GothamBookItalic.ttf */,
+				1FB8813D26BFF6E400008AEA /* GothamLight.ttf */,
+				1FB8813F26BFF6E400008AEA /* GothamLightItalic.ttf */,
+				1FB8813B26BFF6E400008AEA /* GothamMedium_1.ttf */,
+				1FB8813226BFF6E300008AEA /* GothamMedium.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		773B66AF08A7F84241E13A41 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */,
+				1222927BB13C51AC93E4CAFB /* Pods-SpotifyVIP.release.xcconfig */,
+				F4573C26D4E75254075099E7 /* Pods-SpotifyVIP-SpotifyVIPUITests.debug.xcconfig */,
+				120BB7E52008BAA1DDC19630 /* Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig */,
+				E83B339A036C0A9037F4758C /* Pods-SpotifyVIPTests.debug.xcconfig */,
+				07067678BE78A557A24A50CF /* Pods-SpotifyVIPTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CA7CDE72B2138E702B1D36A1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */,
+				26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */,
+				E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +374,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F2A616926BFECF20085133C /* Build configuration list for PBXNativeTarget "SpotifyVIP" */;
 			buildPhases = (
+				40C54ECB411250912554F5D0 /* [CP] Check Pods Manifest.lock */,
 				1F2A613B26BFECF10085133C /* Sources */,
 				1F2A613C26BFECF10085133C /* Frameworks */,
 				1F2A613D26BFECF10085133C /* Resources */,
+				6899F039AE892BA328947DC1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +393,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F2A616C26BFECF20085133C /* Build configuration list for PBXNativeTarget "SpotifyVIPTests" */;
 			buildPhases = (
+				D998704C2F905EE3ACA64E98 /* [CP] Check Pods Manifest.lock */,
 				1F2A615126BFECF20085133C /* Sources */,
 				1F2A615226BFECF20085133C /* Frameworks */,
 				1F2A615326BFECF20085133C /* Resources */,
@@ -170,9 +412,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F2A616F26BFECF20085133C /* Build configuration list for PBXNativeTarget "SpotifyVIPUITests" */;
 			buildPhases = (
+				9DCF43B41792BF6D0B623C34 /* [CP] Check Pods Manifest.lock */,
 				1F2A615C26BFECF20085133C /* Sources */,
 				1F2A615D26BFECF20085133C /* Frameworks */,
 				1F2A615E26BFECF20085133C /* Resources */,
+				9E8E49795D1E1AD680C225D8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -231,9 +475,25 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F92176C26C002F400ED80F0 /* Gotham-XLightItalic.otf in Resources */,
+				1F92176426C002EF00ED80F0 /* Gotham-UltraItalic.otf in Resources */,
+				1F92175426C002E600ED80F0 /* Gotham-BookItalic.otf in Resources */,
+				1F92178026C002FF00ED80F0 /* GothamLight.ttf in Resources */,
+				1F92175C26C002EB00ED80F0 /* Gotham-Thin.otf in Resources */,
+				1F92177426C002F900ED80F0 /* GothamBoldItalic.ttf in Resources */,
+				1F92177C26C002FD00ED80F0 /* GothamBookItalic.ttf in Resources */,
+				1F92178826C0030400ED80F0 /* GothamMedium_1.ttf in Resources */,
+				1F92178C26C0030600ED80F0 /* GothamMedium.ttf in Resources */,
+				1F92176026C002ED00ED80F0 /* Gotham-ThinItalic.otf in Resources */,
+				1F92175026C002D600ED80F0 /* Gotham-Bold.otf in Resources */,
+				1F92175826C002E800ED80F0 /* Gotham-Light.otf in Resources */,
 				1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */,
+				1F92174C26C002C500ED80F0 /* Gotham-Black.otf in Resources */,
 				1F2A614C26BFECF20085133C /* Assets.xcassets in Resources */,
-				1F2A614A26BFECF10085133C /* Main.storyboard in Resources */,
+				1F92176826C002F200ED80F0 /* Gotham-XLight.otf in Resources */,
+				1F92177026C002F600ED80F0 /* GothamBold.ttf in Resources */,
+				1F92177826C002FA00ED80F0 /* GothamBook.ttf in Resources */,
+				1F92178426C0030100ED80F0 /* GothamLightItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,14 +513,130 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		40C54ECB411250912554F5D0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifyVIP-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6899F039AE892BA328947DC1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9DCF43B41792BF6D0B623C34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifyVIP-SpotifyVIPUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8E49795D1E1AD680C225D8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyVIP-SpotifyVIPUITests/Pods-SpotifyVIP-SpotifyVIPUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SpotifyVIP-SpotifyVIPUITests/Pods-SpotifyVIP-SpotifyVIPUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SpotifyVIP-SpotifyVIPUITests/Pods-SpotifyVIP-SpotifyVIPUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D998704C2F905EE3ACA64E98 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SpotifyVIPTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1F2A613B26BFECF10085133C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2A614726BFECF10085133C /* ViewController.swift in Sources */,
+				1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */,
+				1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */,
+				1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */,
+				1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */,
+				1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */,
+				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
+				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
+				1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */,
+				1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */,
+				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
+				1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */,
+				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
 				1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */,
 				1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */,
+				1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */,
+				1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +672,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1F2A614826BFECF10085133C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1F2A614926BFECF10085133C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		1F2A614D26BFECF20085133C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -433,6 +801,7 @@
 		};
 		1F2A616A26BFECF20085133C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -451,6 +820,7 @@
 		};
 		1F2A616B26BFECF20085133C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1222927BB13C51AC93E4CAFB /* Pods-SpotifyVIP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -469,6 +839,7 @@
 		};
 		1F2A616D26BFECF20085133C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E83B339A036C0A9037F4758C /* Pods-SpotifyVIPTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -490,6 +861,7 @@
 		};
 		1F2A616E26BFECF20085133C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07067678BE78A557A24A50CF /* Pods-SpotifyVIPTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -511,6 +883,7 @@
 		};
 		1F2A617026BFECF20085133C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4573C26D4E75254075099E7 /* Pods-SpotifyVIP-SpotifyVIPUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -530,6 +903,7 @@
 		};
 		1F2A617126BFECF20085133C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 120BB7E52008BAA1DDC19630 /* Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -8,6 +8,8 @@
 import UIKit
 import Cartography
 
+protocol SignupEmailViewControllerInput: SignupEmailPresenterOutput {}
+
 protocol SignupEmailViewControllerOutput {
     func verificationEmail(email: String)
 }
@@ -26,7 +28,7 @@ class SignupEmailViewController: UIViewController {
     }()
     
     public var router: SignupEmailRouter?
-
+    public var output: SignupEmailViewControllerOutput?
     
     init(configurator: SignupEmailConfigurator = SignupEmailConfigurator.shared) {
         super.init(nibName: nil, bundle: nil)
@@ -45,7 +47,29 @@ class SignupEmailViewController: UIViewController {
        
     }
 }
-
+// MARK: - Textfield Delegates
+extension SignupEmailViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        output?.verificationEmail(email: textField.text ?? "")
+        return true
+    }
+}
+// MARK: - InputPresenter
+extension SignupEmailViewController: SignupEmailViewControllerInput {
+    func displayValidEmail() {
+        DispatchQueue.main.async {
+            self.nextButton.alpha = 1.0
+            self.nextButton.isUserInteractionEnabled = true
+        }
+    }
+    
+    func displayInvalidEmail() {
+        DispatchQueue.main.async {
+            self.nextButton.alpha = 0.3
+            self.nextButton.isUserInteractionEnabled = false
+        }
+    }
+}
 // MARK: - Configurator
 extension SignupEmailViewController {
     private func configure(_ configurator: SignupEmailConfigurator = SignupEmailConfigurator.shared) {
@@ -66,6 +90,9 @@ extension SignupEmailViewController: CommonView {
     }
     
     func configureViews() {
+        emailTextField.textField.delegate = self
+        nextButton.alpha = 0.3
+        nextButton.isUserInteractionEnabled = false
         setupNavigationTitle(title: CommonStrings.createAccount)
         view.backgroundColor = UIColor.mainBackground
     }

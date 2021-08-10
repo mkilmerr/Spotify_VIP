@@ -108,6 +108,7 @@ extension OnboardingViewController: CommonView {
     }
     
     func configureViews() {
+        navigationItem.backButtonTitle = ""
         view.backgroundColor = UIColor.mainBackground
         let stackButtons = [signupButton, continueWithGoole, continueWithFacebook, continueWithApple, loginButton]
         stackButtons.forEach { (button) in

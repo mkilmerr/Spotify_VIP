@@ -7,9 +7,8 @@
 
 import Foundation
 
-protocol SignupEmailPresenterInput {
-    
-}
+protocol SignupEmailPresenterInput: SignupEmailInteractorOutput {}
+
 protocol SignupEmailPresenterOutput: class {
     func displayValidEmail()
     func displayInvalidEmail()
@@ -20,5 +19,15 @@ final class SignupEmailPresenter {
     
     init(output: SignupEmailPresenterOutput) {
         self.output = output
+    }
+}
+
+extension SignupEmailPresenter: SignupEmailPresenterInput {
+    func presentValidEmail() {
+        output?.displayValidEmail()
+    }
+    
+    func presentInvalidEmail() {
+        output?.displayInvalidEmail()
     }
 }

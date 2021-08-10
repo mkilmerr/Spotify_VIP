@@ -10,4 +10,5 @@ import UIKit
 extension UIColor {
     static let mainGreen = UIColor(red: 87/255, green: 183/255, blue: 96/255, alpha: 1.0)
     static let mainBackground = UIColor.black
+    static let textfieldGrey = UIColor(red: 159/255, green: 159/255, blue: 159/255, alpha: 1.0)
 }
