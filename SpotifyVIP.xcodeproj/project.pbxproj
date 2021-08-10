@@ -44,6 +44,7 @@
 		1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8812926BFF55D00008AEA /* CommonColors.swift */; };
 		1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8814626BFF96E00008AEA /* CommonView.swift */; };
 		1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8815226BFFA5800008AEA /* CommonAssets.swift */; };
+		1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */; };
 		3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */; };
 		A8E32375AA3CCA0F319587A1 /* Pods_SpotifyVIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */; };
 		FF1AD7301F523D687467C573 /* Pods_SpotifyVIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */; };
@@ -113,6 +114,7 @@
 		1FB8814226BFF6E400008AEA /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
 		1FB8814626BFF96E00008AEA /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		1FB8815226BFFA5800008AEA /* CommonAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAssets.swift; sourceTree = "<group>"; };
+		1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
 		26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP_SpotifyVIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.debug.xcconfig"; sourceTree = "<group>"; };
 		8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -279,22 +281,22 @@
 		1F2A617626BFED430085133C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1FB9352B26C3211000DB4ACD /* Signup */,
 				1FB8811626BFF34500008AEA /* OnBoarding */,
-				1F60F19026C14A52000B2B0E /* Signup */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
 		};
-		1F60F19026C14A52000B2B0E /* Signup */ = {
+		1F60F19026C14A52000B2B0E /* SignupEmail */ = {
 			isa = PBXGroup;
 			children = (
-				1F22711426C3182300F279BC /* View */,
 				1F22711526C3182A00F279BC /* Configurator */,
 				1F22711926C3183200F279BC /* Router */,
+				1F22711426C3182300F279BC /* View */,
 				1F22711A26C3183A00F279BC /* Interactor */,
 				1F22711B26C3184A00F279BC /* Presenter */,
 			);
-			path = Signup;
+			path = SignupEmail;
 			sourceTree = "<group>";
 		};
 		1FB8811626BFF34500008AEA /* OnBoarding */ = {
@@ -342,6 +344,63 @@
 				1FB8813226BFF6E300008AEA /* GothamMedium.ttf */,
 			);
 			path = fonts;
+			sourceTree = "<group>";
+		};
+		1FB9352A26C320FC00DB4ACD /* SignupPassword */ = {
+			isa = PBXGroup;
+			children = (
+				1FB9352D26C3212A00DB4ACD /* Configurator */,
+				1FB9352E26C3213400DB4ACD /* Router */,
+				1FB9352C26C3212400DB4ACD /* View */,
+				1FB9352F26C3214000DB4ACD /* Interactor */,
+				1FB9353026C3215000DB4ACD /* Presenter */,
+			);
+			path = SignupPassword;
+			sourceTree = "<group>";
+		};
+		1FB9352B26C3211000DB4ACD /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				1F60F19026C14A52000B2B0E /* SignupEmail */,
+				1FB9352A26C320FC00DB4ACD /* SignupPassword */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		1FB9352C26C3212400DB4ACD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1FB9352D26C3212A00DB4ACD /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1FB9352E26C3213400DB4ACD /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1FB9352F26C3214000DB4ACD /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1FB9353026C3215000DB4ACD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		773B66AF08A7F84241E13A41 /* Pods */ = {
@@ -625,6 +684,7 @@
 				1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */,
 				1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */,
 				1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */,
+				1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */,
 				1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */,
 				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,

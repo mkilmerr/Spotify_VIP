@@ -21,6 +21,6 @@ class SignupEmailRouter {
 
 extension SignupEmailRouter: SignupEmailRouterProtocol {
     func navigateToCreatePasswordScreen() {
-        viewController?.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        viewController?.navigationController?.pushViewController(SignupPasswordViewController(), animated: true)
     }
 }
