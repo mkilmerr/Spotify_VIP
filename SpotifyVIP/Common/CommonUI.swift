@@ -130,6 +130,7 @@ class CommonSignupTextField: UIView {
     private var footerTitle = ""
     private var type: CommonSignupTextFieldType = .email
     private let rightImage = UIImageView()
+    private let datePicker = UIDatePicker()
     
     public var mainTitle: UILabel = {
        let label = UILabel()
@@ -194,7 +195,8 @@ class CommonSignupTextField: UIView {
             setupTextField()
         case .password:
             setupPasswordTextField()
-        default: break
+        case .date :
+            setupDatePickerTextField()
         }
     }
     
@@ -225,6 +227,45 @@ class CommonSignupTextField: UIView {
         
         textField.isSecureTextEntry = !textField.isSecureTextEntry
     }
+    
+    private func setupDatePickerTextField() {
+        datePicker.datePickerMode = .date
+        datePicker.preferredDatePickerStyle = .wheels
+        datePicker.maximumDate = Date()
+        
+        let doneButton = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.done, target: self, action: #selector(doneDatePicker))
+        
+        let toolbar = UIToolbar()
+        toolbar.sizeToFit()
+        toolbar.setItems([doneButton], animated: false)
+        
+        textField.inputAccessoryView = toolbar
+        textField.inputView = datePicker
+        
+        constrain(self, mainTitle, textField, footerSubtitle) { view, title, textfield, footer in
+            
+            title.top == view.top + 4
+            
+            textfield.top == title.bottom + 10
+            textfield.leftMargin == view.leftMargin
+            textfield.rightMargin == view.rightMargin
+            textfield.height == 70
+            textfield.centerX == view.centerX
+            
+            footer.top == textfield.bottom + 1
+            footer.leftMargin == view.leftMargin
+
+        }
+        
+    }
+    
+    @objc private func doneDatePicker() {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy"
+        textField.text = formatter.string(from: datePicker.date)
+        endEditing(true)
+    }
+    
     private func setupPasswordTextField() {
         let tap = UITapGestureRecognizer(target: self, action: #selector(rightImageDidTapped))
         
