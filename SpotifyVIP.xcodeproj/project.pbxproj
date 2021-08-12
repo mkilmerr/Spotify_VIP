@@ -44,6 +44,10 @@
 		1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8812926BFF55D00008AEA /* CommonColors.swift */; };
 		1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8814626BFF96E00008AEA /* CommonView.swift */; };
 		1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8815226BFFA5800008AEA /* CommonAssets.swift */; };
+		1FB8912926C535BA000F9A5F /* SignupPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8912826C535BA000F9A5F /* SignupPasswordInteractor.swift */; };
+		1FB8912E26C53787000F9A5F /* SignupPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8912D26C53787000F9A5F /* SignupPasswordPresenter.swift */; };
+		1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913226C5392C000F9A5F /* SignupPasswordRouter.swift */; };
+		1FB8913826C53A47000F9A5F /* SignupPasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */; };
 		1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */; };
 		3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */; };
 		A8E32375AA3CCA0F319587A1 /* Pods_SpotifyVIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */; };
@@ -114,6 +118,10 @@
 		1FB8814226BFF6E400008AEA /* Gotham-Thin.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Gotham-Thin.otf"; sourceTree = "<group>"; };
 		1FB8814626BFF96E00008AEA /* CommonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonView.swift; sourceTree = "<group>"; };
 		1FB8815226BFFA5800008AEA /* CommonAssets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAssets.swift; sourceTree = "<group>"; };
+		1FB8912826C535BA000F9A5F /* SignupPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordInteractor.swift; sourceTree = "<group>"; };
+		1FB8912D26C53787000F9A5F /* SignupPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordPresenter.swift; sourceTree = "<group>"; };
+		1FB8913226C5392C000F9A5F /* SignupPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordRouter.swift; sourceTree = "<group>"; };
+		1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordConfigurator.swift; sourceTree = "<group>"; };
 		1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
 		26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP_SpotifyVIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -378,6 +386,7 @@
 		1FB9352D26C3212A00DB4ACD /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -385,6 +394,7 @@
 		1FB9352E26C3213400DB4ACD /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				1FB8913226C5392C000F9A5F /* SignupPasswordRouter.swift */,
 			);
 			path = Router;
 			sourceTree = "<group>";
@@ -392,6 +402,7 @@
 		1FB9352F26C3214000DB4ACD /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				1FB8912826C535BA000F9A5F /* SignupPasswordInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -399,6 +410,7 @@
 		1FB9353026C3215000DB4ACD /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1FB8912D26C53787000F9A5F /* SignupPasswordPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -682,6 +694,7 @@
 			files = (
 				1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */,
 				1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */,
+				1FB8912E26C53787000F9A5F /* SignupPasswordPresenter.swift in Sources */,
 				1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */,
 				1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */,
 				1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */,
@@ -690,13 +703,16 @@
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
 				1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */,
 				1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */,
+				1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */,
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
 				1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */,
 				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
+				1FB8912926C535BA000F9A5F /* SignupPasswordInteractor.swift in Sources */,
 				1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */,
 				1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */,
 				1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */,
 				1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */,
+				1FB8913826C53A47000F9A5F /* SignupPasswordConfigurator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
