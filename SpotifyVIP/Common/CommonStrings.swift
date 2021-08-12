@@ -17,6 +17,7 @@ class CommonStrings {
     static let createAccount = "Create account"
     static let whatsYourEmail = "What's your email?"
     static let createPassword = "Create a password"
+    static let whatsYourDateBirth = "What's your date of birthday?"
     static let youWillNeddConfirmEmailLater = "You 'll need to confirm this email later."
     static let useAtLeast = "Use at least 8 characters."
     static let next = "next"

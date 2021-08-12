@@ -181,6 +181,9 @@ class CommonSignupTextField: UIView {
         textField.textColor = UIColor.white
         textField.font = UIFont(name: "Gotham-Bold", size: 20)
         
+        mainTitle.numberOfLines = 0
+        mainTitle.adjustsFontSizeToFitWidth = true
+        
         addSubview(mainTitle)
         addSubview(textField)
         addSubview(footerSubtitle)

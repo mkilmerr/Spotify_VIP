@@ -48,6 +48,7 @@
 		1FB8912E26C53787000F9A5F /* SignupPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8912D26C53787000F9A5F /* SignupPasswordPresenter.swift */; };
 		1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913226C5392C000F9A5F /* SignupPasswordRouter.swift */; };
 		1FB8913826C53A47000F9A5F /* SignupPasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */; };
+		1FB8913F26C57314000F9A5F /* SignupDateBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913E26C57314000F9A5F /* SignupDateBirthViewController.swift */; };
 		1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */; };
 		3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */; };
 		A8E32375AA3CCA0F319587A1 /* Pods_SpotifyVIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */; };
@@ -122,6 +123,7 @@
 		1FB8912D26C53787000F9A5F /* SignupPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordPresenter.swift; sourceTree = "<group>"; };
 		1FB8913226C5392C000F9A5F /* SignupPasswordRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordRouter.swift; sourceTree = "<group>"; };
 		1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordConfigurator.swift; sourceTree = "<group>"; };
+		1FB8913E26C57314000F9A5F /* SignupDateBirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthViewController.swift; sourceTree = "<group>"; };
 		1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
 		26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP_SpotifyVIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -354,6 +356,22 @@
 			path = fonts;
 			sourceTree = "<group>";
 		};
+		1FB8913C26C5727B000F9A5F /* SignupDateBirth */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8913D26C572FC000F9A5F /* View */,
+			);
+			path = SignupDateBirth;
+			sourceTree = "<group>";
+		};
+		1FB8913D26C572FC000F9A5F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FB8913E26C57314000F9A5F /* SignupDateBirthViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1FB9352A26C320FC00DB4ACD /* SignupPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -371,6 +389,7 @@
 			children = (
 				1F60F19026C14A52000B2B0E /* SignupEmail */,
 				1FB9352A26C320FC00DB4ACD /* SignupPassword */,
+				1FB8913C26C5727B000F9A5F /* SignupDateBirth */,
 			);
 			path = Signup;
 			sourceTree = "<group>";
@@ -702,6 +721,7 @@
 				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
 				1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */,
+				1FB8913F26C57314000F9A5F /* SignupDateBirthViewController.swift in Sources */,
 				1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */,
 				1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */,
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,

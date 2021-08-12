@@ -21,6 +21,6 @@ class SignupPasswordRouter {
 
 extension SignupPasswordRouter: SignupPasswordRouterProtocol {
     func navigateToBirthDayScreen() {
-        viewController?.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        viewController?.navigationController?.pushViewController(SignupDateBirthViewController(), animated: true)
     }
 }
