@@ -17,7 +17,7 @@ protocol SignupPasswordViewControllerOutput {
 class SignupPasswordViewController: UIViewController {
     
     private var passwordTextField: CommonSignupTextField = {
-        let textfield = CommonSignupTextField(title: CommonStrings.createPassword, footerTitle: CommonStrings.useAtLeast)
+        let textfield = CommonSignupTextField(title: CommonStrings.createPassword, footerTitle: CommonStrings.useAtLeast, type: .password)
         return textfield
     }()
     

@@ -119,9 +119,17 @@ class RoundedButton: UIButton {
     }
 }
 
+public enum CommonSignupTextFieldType {
+    case email
+    case password
+    case date
+}
+
 class CommonSignupTextField: UIView {
     private var title = ""
     private var footerTitle = ""
+    private var type: CommonSignupTextFieldType = .email
+    private let rightImage = UIImageView()
     
     public var mainTitle: UILabel = {
        let label = UILabel()
@@ -152,32 +160,104 @@ class CommonSignupTextField: UIView {
         super.init(frame: frame)
     }
     
-    required init(title: String, footerTitle: String ) {
+    required init(title: String, footerTitle: String, type: CommonSignupTextFieldType = .email) {
         self.title = title
         self.footerTitle = footerTitle
         super.init(frame: .null)
-        self.setupTextField()
-        
+        self.configureView()
+        self.buildWithType(type: type)
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    private func setupTextField() {
+    private func configureView() {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = UIColor.mainBackground
         textField.layer.cornerRadius = 10
         textField.backgroundColor = UIColor.textfieldGrey
         textField.textColor = UIColor.white
         textField.font = UIFont(name: "Gotham-Bold", size: 20)
+        
         addSubview(mainTitle)
         addSubview(textField)
         addSubview(footerSubtitle)
         
         mainTitle.text = title
         footerSubtitle.text = footerTitle
+    }
+    
+    private func buildWithType(type: CommonSignupTextFieldType) {
+        switch type {
+        case .email:
+            setupTextField()
+        case .password:
+            setupPasswordTextField()
+        default: break
+        }
+    }
+    
+    private func showPassword() {
+        DispatchQueue.main.async {
+            self.rightImage.image = CommonAssets.unlock
+            self.textField.isSecureTextEntry = false
+            self.textField.layoutSubviews()
+        }
+    }
+    
+    private func hidePassword() {
+        DispatchQueue.main.async {
+            self.rightImage.image = CommonAssets.lock
+            self.textField.isSecureTextEntry = true
+            self.textField.layoutSubviews()
+        }
+      
+    }
+
+    @objc private func rightImageDidTapped() {
+        switch textField.isSecureTextEntry {
+        case true:
+            showPassword()
+        default:
+            hidePassword()
+        }
         
+        textField.isSecureTextEntry = !textField.isSecureTextEntry
+    }
+    private func setupPasswordTextField() {
+        let tap = UITapGestureRecognizer(target: self, action: #selector(rightImageDidTapped))
+        
+        textField.isSecureTextEntry = true
+        
+        rightImage.isUserInteractionEnabled = true
+        rightImage.addGestureRecognizer(tap)
+        rightImage.contentMode = .scaleAspectFit
+        rightImage.translatesAutoresizingMaskIntoConstraints = false
+        addSubview(rightImage)
+        rightImage.image = CommonAssets.lock
+        
+        constrain(self, mainTitle, textField, footerSubtitle, rightImage) { view, title, textfield, footer, image in
+            
+            title.top == view.top + 4
+            
+            textfield.top == title.bottom + 10
+            textfield.leftMargin == view.leftMargin
+            textfield.rightMargin == view.rightMargin
+            textfield.height == 70
+            textfield.centerX == view.centerX
+            
+            footer.top == textfield.bottom + 1
+            footer.leftMargin == view.leftMargin
+            
+            image.width == 30
+            image.height == 30
+            image.centerY == textfield.centerY
+            image.trailing == textfield.trailing
+        }
+    }
+    
+    private func setupTextField() {
         constrain(self, mainTitle, textField, footerSubtitle) { view, title, textfield, footer in
             
             title.top == view.top + 4

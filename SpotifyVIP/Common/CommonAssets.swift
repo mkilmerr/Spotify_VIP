@@ -12,4 +12,6 @@ class CommonAssets {
     static let googleLogo = UIImage(named: "google")
     static let facebookLogo = UIImage(named: "facebook")
     static let appleLogo = UIImage(named: "apple")
+    static let lock = UIImage(named: "lock")
+    static let unlock = UIImage(named: "unlock")
 }
