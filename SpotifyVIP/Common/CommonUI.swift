@@ -136,6 +136,8 @@ class CommonSignupTextField: UIView {
        let label = UILabel()
         label.font = UIFont(name: "Gotham-Bold", size: 30)
         label.textColor = UIColor.white
+        label.numberOfLines = 0
+        label.adjustsFontSizeToFitWidth = true
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
@@ -180,9 +182,6 @@ class CommonSignupTextField: UIView {
         textField.backgroundColor = UIColor.textfieldGrey
         textField.textColor = UIColor.white
         textField.font = UIFont(name: "Gotham-Bold", size: 20)
-        
-        mainTitle.numberOfLines = 0
-        mainTitle.adjustsFontSizeToFitWidth = true
         
         addSubview(mainTitle)
         addSubview(textField)
@@ -248,8 +247,10 @@ class CommonSignupTextField: UIView {
         constrain(self, mainTitle, textField, footerSubtitle) { view, title, textfield, footer in
             
             title.top == view.top + 4
+            title.leftMargin == view.leftMargin
+            title.rightMargin == view.rightMargin
             
-            textfield.top == title.bottom + 10
+            textfield.top == title.bottom + 20
             textfield.leftMargin == view.leftMargin
             textfield.rightMargin == view.rightMargin
             textfield.height == 70

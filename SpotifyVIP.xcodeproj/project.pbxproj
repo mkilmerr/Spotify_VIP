@@ -21,6 +21,10 @@
 		1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */; };
 		1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */; };
 		1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */; };
+		1F8D902226C58A100060BE05 /* SignupDateBirthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902126C58A100060BE05 /* SignupDateBirthInteractor.swift */; };
+		1F8D902A26C58AE40060BE05 /* SignupDateBirthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */; };
+		1F8D902F26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */; };
+		1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D903326C58D2A0060BE05 /* SignupDateBirthRouter.swift */; };
 		1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92173F26BFFE0800ED80F0 /* CommonUI.swift */; };
 		1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92174726C0017800ED80F0 /* CommonStrings.swift */; };
 		1F92174C26C002C500ED80F0 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813426BFF6E300008AEA /* Gotham-Black.otf */; };
@@ -96,6 +100,10 @@
 		1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailConfigurator.swift; sourceTree = "<group>"; };
 		1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailRouter.swift; sourceTree = "<group>"; };
 		1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractor.swift; sourceTree = "<group>"; };
+		1F8D902126C58A100060BE05 /* SignupDateBirthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthInteractor.swift; sourceTree = "<group>"; };
+		1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthPresenter.swift; sourceTree = "<group>"; };
+		1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthConfigurator.swift; sourceTree = "<group>"; };
+		1F8D903326C58D2A0060BE05 /* SignupDateBirthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthRouter.swift; sourceTree = "<group>"; };
 		1F92173F26BFFE0800ED80F0 /* CommonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUI.swift; sourceTree = "<group>"; };
 		1F92174726C0017800ED80F0 /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
 		1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
@@ -309,6 +317,38 @@
 			path = SignupEmail;
 			sourceTree = "<group>";
 		};
+		1F8D901D26C589C50060BE05 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1F8D901E26C589CC0060BE05 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D903326C58D2A0060BE05 /* SignupDateBirthRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1F8D901F26C589D40060BE05 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D902126C58A100060BE05 /* SignupDateBirthInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1F8D902026C589DE0060BE05 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 		1FB8811626BFF34500008AEA /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -359,7 +399,11 @@
 		1FB8913C26C5727B000F9A5F /* SignupDateBirth */ = {
 			isa = PBXGroup;
 			children = (
+				1F8D901D26C589C50060BE05 /* Configurator */,
+				1F8D901E26C589CC0060BE05 /* Router */,
 				1FB8913D26C572FC000F9A5F /* View */,
+				1F8D901F26C589D40060BE05 /* Interactor */,
+				1F8D902026C589DE0060BE05 /* Presenter */,
 			);
 			path = SignupDateBirth;
 			sourceTree = "<group>";
@@ -717,6 +761,8 @@
 				1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */,
 				1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */,
 				1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */,
+				1F8D902F26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift in Sources */,
+				1F8D902A26C58AE40060BE05 /* SignupDateBirthPresenter.swift in Sources */,
 				1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */,
 				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
@@ -727,8 +773,10 @@
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
 				1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */,
 				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
+				1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */,
 				1FB8912926C535BA000F9A5F /* SignupPasswordInteractor.swift in Sources */,
 				1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */,
+				1F8D902226C58A100060BE05 /* SignupDateBirthInteractor.swift in Sources */,
 				1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */,
 				1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */,
 				1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */,
