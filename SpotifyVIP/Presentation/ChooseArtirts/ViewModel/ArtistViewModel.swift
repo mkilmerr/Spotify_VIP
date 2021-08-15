@@ -12,3 +12,8 @@ struct ArtistViewModel {
     let name: String
     let imageUrl: String
 }
+
+struct ArtistViewModelError {
+    let title: String
+    let message: String 
+}

@@ -21,6 +21,6 @@ class SignupDateBirthRouter {
 
 extension SignupDateBirthRouter: SignupDateBirthRouterProtocol {
     func navigateToGenderView() {
-        viewController?.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        viewController?.navigationController?.pushViewController(ChooseArtistsViewController(), animated: true)
     }
 }

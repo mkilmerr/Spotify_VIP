@@ -21,6 +21,7 @@
 		1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */; };
 		1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */; };
 		1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */; };
+		1F868A7326C968FD006224DE /* dot_loading.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F868A7226C968FD006224DE /* dot_loading.json */; };
 		1F8D902226C58A100060BE05 /* SignupDateBirthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902126C58A100060BE05 /* SignupDateBirthInteractor.swift */; };
 		1F8D902A26C58AE40060BE05 /* SignupDateBirthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */; };
 		1F8D902F26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */; };
@@ -56,6 +57,10 @@
 		1FA7E20126C93AC000EEF652 /* URLRequest+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E20026C93AC000EEF652 /* URLRequest+JSON.swift */; };
 		1FA7E20926C941A500EEF652 /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E20826C941A500EEF652 /* Data+JSON.swift */; };
 		1FA7E20E26C947D800EEF652 /* ChooseArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E20D26C947D800EEF652 /* ChooseArtistsViewController.swift */; };
+		1FA7E21326C9504500EEF652 /* ChooseArtistsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E21226C9504500EEF652 /* ChooseArtistsPresenter.swift */; };
+		1FA7E21826C955E700EEF652 /* ChooseArtistsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E21726C955E700EEF652 /* ChooseArtistsRouter.swift */; };
+		1FA7E21D26C956B500EEF652 /* ChooseArtistsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E21C26C956B500EEF652 /* ChooseArtistsConfigurator.swift */; };
+		1FA7E22226C959DA00EEF652 /* CommonAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E22126C959DA00EEF652 /* CommonAnimations.swift */; };
 		1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */; };
 		1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8812926BFF55D00008AEA /* CommonColors.swift */; };
 		1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8814626BFF96E00008AEA /* CommonView.swift */; };
@@ -66,6 +71,7 @@
 		1FB8913826C53A47000F9A5F /* SignupPasswordConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */; };
 		1FB8913F26C57314000F9A5F /* SignupDateBirthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8913E26C57314000F9A5F /* SignupDateBirthViewController.swift */; };
 		1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */; };
+		1FE47FD826C95DF000E57901 /* loading_search.json in Resources */ = {isa = PBXBuildFile; fileRef = 1FE47FD726C95DF000E57901 /* loading_search.json */; };
 		3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */; };
 		A8E32375AA3CCA0F319587A1 /* Pods_SpotifyVIPTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E03DCCE11D325DB07CF77894 /* Pods_SpotifyVIPTests.framework */; };
 		FF1AD7301F523D687467C573 /* Pods_SpotifyVIP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */; };
@@ -112,6 +118,7 @@
 		1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailConfigurator.swift; sourceTree = "<group>"; };
 		1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailRouter.swift; sourceTree = "<group>"; };
 		1F85FD4926C2E92000392C99 /* SignupEmailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractor.swift; sourceTree = "<group>"; };
+		1F868A7226C968FD006224DE /* dot_loading.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dot_loading.json; sourceTree = "<group>"; };
 		1F8D902126C58A100060BE05 /* SignupDateBirthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthInteractor.swift; sourceTree = "<group>"; };
 		1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthPresenter.swift; sourceTree = "<group>"; };
 		1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthConfigurator.swift; sourceTree = "<group>"; };
@@ -130,6 +137,10 @@
 		1FA7E20026C93AC000EEF652 /* URLRequest+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+JSON.swift"; sourceTree = "<group>"; };
 		1FA7E20826C941A500EEF652 /* Data+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
 		1FA7E20D26C947D800EEF652 /* ChooseArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsViewController.swift; sourceTree = "<group>"; };
+		1FA7E21226C9504500EEF652 /* ChooseArtistsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsPresenter.swift; sourceTree = "<group>"; };
+		1FA7E21726C955E700EEF652 /* ChooseArtistsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsRouter.swift; sourceTree = "<group>"; };
+		1FA7E21C26C956B500EEF652 /* ChooseArtistsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsConfigurator.swift; sourceTree = "<group>"; };
+		1FA7E22126C959DA00EEF652 /* CommonAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonAnimations.swift; sourceTree = "<group>"; };
 		1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1FB8812926BFF55D00008AEA /* CommonColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColors.swift; sourceTree = "<group>"; };
 		1FB8813226BFF6E300008AEA /* GothamMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamMedium.ttf; sourceTree = "<group>"; };
@@ -157,6 +168,7 @@
 		1FB8913726C53A47000F9A5F /* SignupPasswordConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordConfigurator.swift; sourceTree = "<group>"; };
 		1FB8913E26C57314000F9A5F /* SignupDateBirthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthViewController.swift; sourceTree = "<group>"; };
 		1FB9353126C321C300DB4ACD /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
+		1FE47FD726C95DF000E57901 /* loading_search.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = loading_search.json; sourceTree = "<group>"; };
 		26AE5E474419AAC44322EC91 /* Pods_SpotifyVIP_SpotifyVIPUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP_SpotifyVIPUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6F88F11BCCFDF4DC50EBF88F /* Pods-SpotifyVIP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.debug.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.debug.xcconfig"; sourceTree = "<group>"; };
 		8B33062B3D077990D321EF3D /* Pods_SpotifyVIP.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SpotifyVIP.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -282,6 +294,7 @@
 		1F2A614126BFECF10085133C /* SpotifyVIP */ = {
 			isa = PBXGroup;
 			children = (
+				1FE47FD326C95DAE00E57901 /* AnimationAssets */,
 				1F8D904026C59CDC0060BE05 /* Network+Parse */,
 				1FB8812826BFF54600008AEA /* Common */,
 				1F2A617526BFED270085133C /* Application */,
@@ -401,6 +414,7 @@
 		1F8D903A26C59C500060BE05 /* Configurator */ = {
 			isa = PBXGroup;
 			children = (
+				1FA7E21C26C956B500EEF652 /* ChooseArtistsConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -408,6 +422,7 @@
 		1F8D903B26C59C580060BE05 /* Router */ = {
 			isa = PBXGroup;
 			children = (
+				1FA7E21726C955E700EEF652 /* ChooseArtistsRouter.swift */,
 			);
 			name = Router;
 			sourceTree = "<group>";
@@ -423,6 +438,7 @@
 		1F8D903D26C59C7F0060BE05 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
+				1FA7E21226C9504500EEF652 /* ChooseArtistsPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -484,6 +500,7 @@
 				1F92173F26BFFE0800ED80F0 /* CommonUI.swift */,
 				1F92174726C0017800ED80F0 /* CommonStrings.swift */,
 				1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */,
+				1FA7E22126C959DA00EEF652 /* CommonAnimations.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -592,6 +609,15 @@
 				1FB8912D26C53787000F9A5F /* SignupPasswordPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1FE47FD326C95DAE00E57901 /* AnimationAssets */ = {
+			isa = PBXGroup;
+			children = (
+				1FE47FD726C95DF000E57901 /* loading_search.json */,
+				1F868A7226C968FD006224DE /* dot_loading.json */,
+			);
+			path = AnimationAssets;
 			sourceTree = "<group>";
 		};
 		773B66AF08A7F84241E13A41 /* Pods */ = {
@@ -725,6 +751,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F868A7326C968FD006224DE /* dot_loading.json in Resources */,
 				1F92176C26C002F400ED80F0 /* Gotham-XLightItalic.otf in Resources */,
 				1F92176426C002EF00ED80F0 /* Gotham-UltraItalic.otf in Resources */,
 				1F92175426C002E600ED80F0 /* Gotham-BookItalic.otf in Resources */,
@@ -739,6 +766,7 @@
 				1F92175826C002E800ED80F0 /* Gotham-Light.otf in Resources */,
 				1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */,
 				1F92174C26C002C500ED80F0 /* Gotham-Black.otf in Resources */,
+				1FE47FD826C95DF000E57901 /* loading_search.json in Resources */,
 				1F2A614C26BFECF20085133C /* Assets.xcassets in Resources */,
 				1F92176826C002F200ED80F0 /* Gotham-XLight.otf in Resources */,
 				1F92177026C002F600ED80F0 /* GothamBold.ttf in Resources */,
@@ -871,6 +899,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FA7E21826C955E700EEF652 /* ChooseArtistsRouter.swift in Sources */,
 				1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */,
 				1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */,
 				1FB8912E26C53787000F9A5F /* SignupPasswordPresenter.swift in Sources */,
@@ -888,9 +917,11 @@
 				1FB8913F26C57314000F9A5F /* SignupDateBirthViewController.swift in Sources */,
 				1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */,
 				1F8D906026C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift in Sources */,
+				1FA7E21D26C956B500EEF652 /* ChooseArtistsConfigurator.swift in Sources */,
 				1F8D904226C59CEA0060BE05 /* NetworkClient.swift in Sources */,
 				1F8D908226C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift in Sources */,
 				1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */,
+				1FA7E21326C9504500EEF652 /* ChooseArtistsPresenter.swift in Sources */,
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
 				1FA7E20126C93AC000EEF652 /* URLRequest+JSON.swift in Sources */,
 				1FA7E20E26C947D800EEF652 /* ChooseArtistsViewController.swift in Sources */,
@@ -899,6 +930,7 @@
 				1F8D904A26C59EE40060BE05 /* Parsable.swift in Sources */,
 				1F8D908726C5AF6E0060BE05 /* Endpoints.swift in Sources */,
 				1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */,
+				1FA7E22226C959DA00EEF652 /* CommonAnimations.swift in Sources */,
 				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
 				1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */,
 				1FB8912926C535BA000F9A5F /* SignupPasswordInteractor.swift in Sources */,

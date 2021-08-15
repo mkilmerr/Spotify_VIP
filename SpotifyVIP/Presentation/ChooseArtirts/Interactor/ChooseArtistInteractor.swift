@@ -7,7 +7,7 @@
 
 import Foundation
 
-protocol ChooseArtistInteractorInput {}
+protocol ChooseArtistInteractorInput: ChooseArtistsViewControllerOutput {}
 
 protocol ChooseArtistInteractorOutput {
     func presentArtists(artists: Array<Artist>)
@@ -23,5 +23,19 @@ class ChooseArtistInteractor {
     init(output: ChooseArtistInteractorOutput?, worker: ChooseArtistWorker = ChooseArtistWorker()) {
         self.output = output
         self.worker = worker
+    }
+}
+
+extension ChooseArtistInteractor: ChooseArtistInteractorInput {
+    func fetchChooseArtists() {
+        worker?.fetchArtists { [weak self]  artists, error in
+            guard let self = self else { return }
+            if let error = error {
+                self.output?.presentError(error: error)
+            } else if let artists = artists {
+                self.artists = artists
+                self.output?.presentArtists(artists: artists)
+            }
+        }
     }
 }

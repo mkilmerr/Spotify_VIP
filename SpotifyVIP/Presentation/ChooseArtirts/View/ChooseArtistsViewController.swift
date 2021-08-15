@@ -9,6 +9,12 @@ import Foundation
 import UIKit
 import Cartography
 
+protocol ChooseArtistsViewControllerInput: ChooseArtistsPresenterOutput {}
+
+protocol ChooseArtistsViewControllerOutput {
+    func fetchChooseArtists()
+}
+
 class ChooseArtistsViewController: UIViewController {
     
     private var passwordTextField: CommonSignupTextField = {
@@ -21,15 +27,53 @@ class ChooseArtistsViewController: UIViewController {
         return button
     }()
     
+    private var artistsViewModel: Array<ArtistViewModel> = []
+    public var router: ChooseArtistsRouter?
+    public var output: ChooseArtistsViewControllerOutput?
+    
+    init(configurator: ChooseArtistsConfigurator = ChooseArtistsConfigurator.shared) {
+        super.init(nibName: nil, bundle: nil)
+        self.configure()
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupViews()
         configureViews()
         setupConstraints()
+        fetchChooseArtists()
     }
     
 }
+// MARK: - Configurator
+extension ChooseArtistsViewController {
+    func configure(configurator: ChooseArtistsConfigurator = ChooseArtistsConfigurator.shared) {
+        configurator.configure(viewController: self)
+    }
+}
+//MARK: - Fetch artists
+extension ChooseArtistsViewController: ChooseArtistsViewControllerOutput {
+    func fetchChooseArtists() {
+        CommonAnimations.shared.presentLoadingSearch(self)
+        output?.fetchChooseArtists()
+    }
+}
 
+// MARK: - Output presenter
+extension ChooseArtistsViewController: ChooseArtistsViewControllerInput {
+    func displayArtists(viewModels: Array<ArtistViewModel>) {
+        artistsViewModel = viewModels
+        CommonAnimations.shared.stopAnimation(self)
+    }
+    
+    func displayError(errorViewModel: ArtistViewModelError) {
+        
+    }
+}
 // MARK: - Configure view
 extension ChooseArtistsViewController: CommonView {
     func setupViews() {

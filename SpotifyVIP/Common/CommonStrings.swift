@@ -21,4 +21,6 @@ class CommonStrings {
     static let youWillNeddConfirmEmailLater = "You 'll need to confirm this email later."
     static let useAtLeast = "Use at least 8 characters."
     static let next = "next"
+    static let errorToFindArtists = "Something wrong with artists search"
+    static let tryAgainLater = "Try again later"
 }
