@@ -25,6 +25,15 @@
 		1F8D902A26C58AE40060BE05 /* SignupDateBirthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */; };
 		1F8D902F26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */; };
 		1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D903326C58D2A0060BE05 /* SignupDateBirthRouter.swift */; };
+		1F8D904226C59CEA0060BE05 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D904126C59CEA0060BE05 /* NetworkClient.swift */; };
+		1F8D904A26C59EE40060BE05 /* Parsable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D904926C59EE40060BE05 /* Parsable.swift */; };
+		1F8D905326C59F7E0060BE05 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D905226C59F7E0060BE05 /* Artist.swift */; };
+		1F8D905B26C5A38F0060BE05 /* ChooseArtistWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D905A26C5A38F0060BE05 /* ChooseArtistWorker.swift */; };
+		1F8D906026C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D905F26C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift */; };
+		1F8D907826C5AD5C0060BE05 /* ArtistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D907726C5AD5C0060BE05 /* ArtistViewModel.swift */; };
+		1F8D907D26C5ADC90060BE05 /* ChooseArtistInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D907C26C5ADC90060BE05 /* ChooseArtistInteractor.swift */; };
+		1F8D908226C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D908126C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift */; };
+		1F8D908726C5AF6E0060BE05 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8D908626C5AF6E0060BE05 /* Endpoints.swift */; };
 		1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92173F26BFFE0800ED80F0 /* CommonUI.swift */; };
 		1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F92174726C0017800ED80F0 /* CommonStrings.swift */; };
 		1F92174C26C002C500ED80F0 /* Gotham-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813426BFF6E300008AEA /* Gotham-Black.otf */; };
@@ -44,6 +53,9 @@
 		1F92178426C0030100ED80F0 /* GothamLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813F26BFF6E400008AEA /* GothamLightItalic.ttf */; };
 		1F92178826C0030400ED80F0 /* GothamMedium_1.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813B26BFF6E400008AEA /* GothamMedium_1.ttf */; };
 		1F92178C26C0030600ED80F0 /* GothamMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1FB8813226BFF6E300008AEA /* GothamMedium.ttf */; };
+		1FA7E20126C93AC000EEF652 /* URLRequest+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E20026C93AC000EEF652 /* URLRequest+JSON.swift */; };
+		1FA7E20926C941A500EEF652 /* Data+JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E20826C941A500EEF652 /* Data+JSON.swift */; };
+		1FA7E20E26C947D800EEF652 /* ChooseArtistsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FA7E20D26C947D800EEF652 /* ChooseArtistsViewController.swift */; };
 		1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */; };
 		1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8812926BFF55D00008AEA /* CommonColors.swift */; };
 		1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FB8814626BFF96E00008AEA /* CommonView.swift */; };
@@ -104,8 +116,20 @@
 		1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthPresenter.swift; sourceTree = "<group>"; };
 		1F8D902E26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthConfigurator.swift; sourceTree = "<group>"; };
 		1F8D903326C58D2A0060BE05 /* SignupDateBirthRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDateBirthRouter.swift; sourceTree = "<group>"; };
+		1F8D904126C59CEA0060BE05 /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		1F8D904926C59EE40060BE05 /* Parsable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parsable.swift; sourceTree = "<group>"; };
+		1F8D905226C59F7E0060BE05 /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		1F8D905A26C5A38F0060BE05 /* ChooseArtistWorker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistWorker.swift; sourceTree = "<group>"; };
+		1F8D905F26C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsStoreProtocol.swift; sourceTree = "<group>"; };
+		1F8D907726C5AD5C0060BE05 /* ArtistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtistViewModel.swift; sourceTree = "<group>"; };
+		1F8D907C26C5ADC90060BE05 /* ChooseArtistInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistInteractor.swift; sourceTree = "<group>"; };
+		1F8D908126C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsAPIStore.swift; sourceTree = "<group>"; };
+		1F8D908626C5AF6E0060BE05 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		1F92173F26BFFE0800ED80F0 /* CommonUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUI.swift; sourceTree = "<group>"; };
 		1F92174726C0017800ED80F0 /* CommonStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonStrings.swift; sourceTree = "<group>"; };
+		1FA7E20026C93AC000EEF652 /* URLRequest+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+JSON.swift"; sourceTree = "<group>"; };
+		1FA7E20826C941A500EEF652 /* Data+JSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+JSON.swift"; sourceTree = "<group>"; };
+		1FA7E20D26C947D800EEF652 /* ChooseArtistsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsViewController.swift; sourceTree = "<group>"; };
 		1FB8811C26BFF37F00008AEA /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		1FB8812926BFF55D00008AEA /* CommonColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonColors.swift; sourceTree = "<group>"; };
 		1FB8813226BFF6E300008AEA /* GothamMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GothamMedium.ttf; sourceTree = "<group>"; };
@@ -258,6 +282,7 @@
 		1F2A614126BFECF10085133C /* SpotifyVIP */ = {
 			isa = PBXGroup;
 			children = (
+				1F8D904026C59CDC0060BE05 /* Network+Parse */,
 				1FB8812826BFF54600008AEA /* Common */,
 				1F2A617526BFED270085133C /* Application */,
 				1F2A617626BFED430085133C /* Presentation */,
@@ -301,6 +326,7 @@
 			children = (
 				1FB9352B26C3211000DB4ACD /* Signup */,
 				1FB8811626BFF34500008AEA /* OnBoarding */,
+				1F8D903826C59C230060BE05 /* ChooseArtirts */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -347,6 +373,96 @@
 				1F8D902926C58AE40060BE05 /* SignupDateBirthPresenter.swift */,
 			);
 			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1F8D903826C59C230060BE05 /* ChooseArtirts */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D903F26C59C940060BE05 /* Worker */,
+				1F8D903A26C59C500060BE05 /* Configurator */,
+				1F8D903B26C59C580060BE05 /* Router */,
+				1F8D903926C59C4B0060BE05 /* View */,
+				1F8D903E26C59C8A0060BE05 /* ViewModel */,
+				1F8D905126C59F6C0060BE05 /* Model */,
+				1F8D903C26C59C6E0060BE05 /* Interactor */,
+				1F8D903D26C59C7F0060BE05 /* Presenter */,
+			);
+			path = ChooseArtirts;
+			sourceTree = "<group>";
+		};
+		1F8D903926C59C4B0060BE05 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1FA7E20D26C947D800EEF652 /* ChooseArtistsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F8D903A26C59C500060BE05 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1F8D903B26C59C580060BE05 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		1F8D903C26C59C6E0060BE05 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D907C26C5ADC90060BE05 /* ChooseArtistInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1F8D903D26C59C7F0060BE05 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1F8D903E26C59C8A0060BE05 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D907726C5AD5C0060BE05 /* ArtistViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		1F8D903F26C59C940060BE05 /* Worker */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D905A26C5A38F0060BE05 /* ChooseArtistWorker.swift */,
+				1F8D905F26C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift */,
+				1F8D908126C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift */,
+			);
+			path = Worker;
+			sourceTree = "<group>";
+		};
+		1F8D904026C59CDC0060BE05 /* Network+Parse */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D904126C59CEA0060BE05 /* NetworkClient.swift */,
+				1F8D904926C59EE40060BE05 /* Parsable.swift */,
+				1F8D908626C5AF6E0060BE05 /* Endpoints.swift */,
+				1FA7E20026C93AC000EEF652 /* URLRequest+JSON.swift */,
+				1FA7E20826C941A500EEF652 /* Data+JSON.swift */,
+			);
+			path = "Network+Parse";
+			sourceTree = "<group>";
+		};
+		1F8D905126C59F6C0060BE05 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1F8D905226C59F7E0060BE05 /* Artist.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		1FB8811626BFF34500008AEA /* OnBoarding */ = {
@@ -762,15 +878,26 @@
 				1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */,
 				1FB9353226C321C300DB4ACD /* SignupPasswordViewController.swift in Sources */,
 				1F8D902F26C58CEC0060BE05 /* SignupDateBirthConfigurator.swift in Sources */,
+				1F8D907D26C5ADC90060BE05 /* ChooseArtistInteractor.swift in Sources */,
 				1F8D902A26C58AE40060BE05 /* SignupDateBirthPresenter.swift in Sources */,
 				1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */,
 				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
+				1F8D905326C59F7E0060BE05 /* Artist.swift in Sources */,
 				1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */,
 				1FB8913F26C57314000F9A5F /* SignupDateBirthViewController.swift in Sources */,
 				1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */,
+				1F8D906026C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift in Sources */,
+				1F8D904226C59CEA0060BE05 /* NetworkClient.swift in Sources */,
+				1F8D908226C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift in Sources */,
 				1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */,
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
+				1FA7E20126C93AC000EEF652 /* URLRequest+JSON.swift in Sources */,
+				1FA7E20E26C947D800EEF652 /* ChooseArtistsViewController.swift in Sources */,
+				1F8D907826C5AD5C0060BE05 /* ArtistViewModel.swift in Sources */,
+				1F8D905B26C5A38F0060BE05 /* ChooseArtistWorker.swift in Sources */,
+				1F8D904A26C59EE40060BE05 /* Parsable.swift in Sources */,
+				1F8D908726C5AF6E0060BE05 /* Endpoints.swift in Sources */,
 				1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */,
 				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
 				1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */,
@@ -778,6 +905,7 @@
 				1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */,
 				1F8D902226C58A100060BE05 /* SignupDateBirthInteractor.swift in Sources */,
 				1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */,
+				1FA7E20926C941A500EEF652 /* Data+JSON.swift in Sources */,
 				1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */,
 				1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */,
 				1FB8913826C53A47000F9A5F /* SignupPasswordConfigurator.swift in Sources */,
