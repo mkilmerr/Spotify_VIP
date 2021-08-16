@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F169A5726C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F169A5626C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift */; };
+		1F169A5C26C99F5D00A3946F /* ImageView+LoadURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F169A5B26C99F5D00A3946F /* ImageView+LoadURL.swift */; };
 		1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */; };
 		1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614226BFECF10085133C /* AppDelegate.swift */; };
 		1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614426BFECF10085133C /* SceneDelegate.swift */; };
@@ -98,6 +100,8 @@
 		07067678BE78A557A24A50CF /* Pods-SpotifyVIPTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIPTests.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIPTests/Pods-SpotifyVIPTests.release.xcconfig"; sourceTree = "<group>"; };
 		120BB7E52008BAA1DDC19630 /* Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP-SpotifyVIPUITests/Pods-SpotifyVIP-SpotifyVIPUITests.release.xcconfig"; sourceTree = "<group>"; };
 		1222927BB13C51AC93E4CAFB /* Pods-SpotifyVIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.release.xcconfig"; sourceTree = "<group>"; };
+		1F169A5626C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F169A5B26C99F5D00A3946F /* ImageView+LoadURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+LoadURL.swift"; sourceTree = "<group>"; };
 		1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailPresenter.swift; sourceTree = "<group>"; };
 		1F2A613F26BFECF10085133C /* SpotifyVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A614226BFECF10085133C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -407,6 +411,7 @@
 			isa = PBXGroup;
 			children = (
 				1FA7E20D26C947D800EEF652 /* ChooseArtistsViewController.swift */,
+				1F169A5626C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -501,6 +506,7 @@
 				1F92174726C0017800ED80F0 /* CommonStrings.swift */,
 				1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */,
 				1FA7E22126C959DA00EEF652 /* CommonAnimations.swift */,
+				1F169A5B26C99F5D00A3946F /* ImageView+LoadURL.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -901,6 +907,7 @@
 			files = (
 				1FA7E21826C955E700EEF652 /* ChooseArtistsRouter.swift in Sources */,
 				1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */,
+				1F169A5C26C99F5D00A3946F /* ImageView+LoadURL.swift in Sources */,
 				1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */,
 				1FB8912E26C53787000F9A5F /* SignupPasswordPresenter.swift in Sources */,
 				1F92174026BFFE0800ED80F0 /* CommonUI.swift in Sources */,
@@ -939,6 +946,7 @@
 				1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */,
 				1FA7E20926C941A500EEF652 /* Data+JSON.swift in Sources */,
 				1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */,
+				1F169A5726C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift in Sources */,
 				1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */,
 				1FB8913826C53A47000F9A5F /* SignupPasswordConfigurator.swift in Sources */,
 			);

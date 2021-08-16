@@ -17,9 +17,24 @@ protocol ChooseArtistsViewControllerOutput {
 
 class ChooseArtistsViewController: UIViewController {
     
-    private var passwordTextField: CommonSignupTextField = {
-        let textfield = CommonSignupTextField(title: CommonStrings.createPassword, footerTitle: CommonStrings.useAtLeast, type: .password)
-        return textfield
+    private lazy var chooseArtistsTitle: UILabel = {
+       let label = UILabel()
+        label.font = UIFont(name: "Gotham-Bold", size: 35)
+        label.textColor = UIColor.white
+        label.numberOfLines = 0
+        label.text = CommonStrings.chooseThreeOrMoreArtists
+        label.adjustsFontSizeToFitWidth = true
+        label.translatesAutoresizingMaskIntoConstraints = false
+        return label
+    }()
+    
+    private lazy var artistsCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+//        layout.minimumInteritemSpacing = 10
+//        layout.minimumLineSpacing = 10
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
     }()
     
     private var nextButton: RoundedActionButton =  {
@@ -67,6 +82,9 @@ extension ChooseArtistsViewController: ChooseArtistsViewControllerOutput {
 extension ChooseArtistsViewController: ChooseArtistsViewControllerInput {
     func displayArtists(viewModels: Array<ArtistViewModel>) {
         artistsViewModel = viewModels
+        DispatchQueue.main.async {
+            self.artistsCollectionView.reloadData()
+        }
         CommonAnimations.shared.stopAnimation(self)
     }
     
@@ -74,14 +92,40 @@ extension ChooseArtistsViewController: ChooseArtistsViewControllerInput {
         
     }
 }
+// MARK: - Collection view delegate & data source
+extension ChooseArtistsViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return artistsViewModel.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChooseArtistsCollectionViewCell.reuseIndentifier, for: indexPath) as?  ChooseArtistsCollectionViewCell {
+//            let httpsUrl = self.artistsViewModel[indexPath.row].imageUrl.replacingOccurrences(of: "http", with: "https")
+//            cell.circularArtistImage.load(url: httpsUrl)
+            cell.viewModel = self.artistsViewModel[indexPath.item]
+            return cell
+        }
+        
+        return UICollectionViewCell()
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize
+       {
+        let screenBounds = UIScreen.main.bounds
+        return CGSize(width: screenBounds.width/4 , height: 100)
+       }
+}
 // MARK: - Configure view
 extension ChooseArtistsViewController: CommonView {
     func setupViews() {
-        view.addSubview(passwordTextField)
-        view.addSubview(nextButton)
+        view.addSubview(chooseArtistsTitle)
+        view.addSubview(artistsCollectionView)
     }
     
     func configureViews() {
+        artistsCollectionView.delegate = self
+        artistsCollectionView.dataSource = self
+        artistsCollectionView.register(ChooseArtistsCollectionViewCell.self, forCellWithReuseIdentifier: ChooseArtistsCollectionViewCell.reuseIndentifier)
         nextButton.isUserInteractionEnabled = false
         nextButton.alpha = 0.3
         setupNavigationTitle(title: CommonStrings.createAccount)
@@ -89,19 +133,21 @@ extension ChooseArtistsViewController: CommonView {
     }
     
     func setupConstraints() {
-        constrain(passwordTextField, nextButton) { email, button in
-            guard let superView = email.superview else {
+        constrain(chooseArtistsTitle, artistsCollectionView) { title, collection in
+            guard let superView = title.superview else {
                 return
             }
             
-            email.height == 100
-            email.leftMargin == superView.leftMargin + 10
-            email.rightMargin == superView.rightMargin + 10
-            email.safeAreaLayoutGuide.top == superView.safeAreaLayoutGuide.top + 20
-            email.centerX == superView.centerX
+            title.leftMargin == superView.leftMargin + 10
+            title.rightMargin == superView.rightMargin + 10
+            title.safeAreaLayoutGuide.top == superView.safeAreaLayoutGuide.top + 20
+            title.centerX == superView.centerX
             
-            button.top == email.bottom + 50
-            button.centerX == superView.centerX
+            collection.top == title.bottom + 20
+            collection.leftMargin == superView.leftMargin
+            collection.rightMargin == superView.rightMargin
+            collection.height == superView.height
+
         }
     }
 }

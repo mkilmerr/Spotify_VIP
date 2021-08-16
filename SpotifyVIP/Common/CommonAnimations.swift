@@ -27,9 +27,7 @@ class CommonAnimations: UIViewController {
     }
     
     func stopAnimation(_ viewController: UIViewController) {
-        self.animationView.stop()
         self.animationView.removeFromSuperview()
-       
     }
     
 }
