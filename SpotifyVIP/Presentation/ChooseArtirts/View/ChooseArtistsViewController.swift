@@ -17,6 +17,7 @@ protocol ChooseArtistsViewControllerOutput {
 
 class ChooseArtistsViewController: UIViewController {
     
+    private var amount: Int = 0
     private lazy var chooseArtistsTitle: UILabel = {
        let label = UILabel()
         label.font = UIFont(name: "Gotham-Bold", size: 35)
@@ -28,18 +29,26 @@ class ChooseArtistsViewController: UIViewController {
         return label
     }()
     
-    private lazy var artistsCollectionView: UICollectionView = {
-        let layout = UICollectionViewFlowLayout()
-//        layout.minimumInteritemSpacing = 10
-//        layout.minimumLineSpacing = 10
-        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        collectionView.translatesAutoresizingMaskIntoConstraints = false
-        return collectionView
+    private var doneButton: RoundedActionButton =  {
+        let button = RoundedActionButton(title: CommonStrings.done, color: UIColor.white)
+        button.addTarget(self, action: #selector(doneDidTapped), for: .touchUpInside)
+        return button
     }()
     
-    private var nextButton: RoundedActionButton =  {
-        let button = RoundedActionButton(title: CommonStrings.next, color: UIColor.white)
-        return button
+    private lazy var searchBar: SearchBarArtists = {
+       let searchBar = SearchBarArtists()
+        searchBar.translatesAutoresizingMaskIntoConstraints = false
+        return searchBar
+    }()
+    
+    private lazy var artistsCollectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 50
+        layout.sectionInset = UIEdgeInsets(top: 10, left: 0, bottom: 10, right: 0)
+        let collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        collectionView.allowsMultipleSelection = true 
+        collectionView.translatesAutoresizingMaskIntoConstraints = false
+        return collectionView
     }()
     
     private var artistsViewModel: Array<ArtistViewModel> = []
@@ -63,6 +72,26 @@ class ChooseArtistsViewController: UIViewController {
         fetchChooseArtists()
     }
     
+}
+
+// MARK: UI Rules
+extension ChooseArtistsViewController {
+    func enableDoneButton(_ amount: Int) {
+        DispatchQueue.main.async {
+            if amount >= 3 {
+                self.doneButton.alpha = 1.0
+                self.doneButton.isUserInteractionEnabled = true
+            } else {
+                self.doneButton.alpha = 0.3
+                self.doneButton.isUserInteractionEnabled = false
+            }
+        }
+        
+    }
+    
+    @objc private func doneDidTapped() {
+        router?.navigateToGreatPicksScreen()
+    }
 }
 // MARK: - Configurator
 extension ChooseArtistsViewController {
@@ -100,8 +129,6 @@ extension ChooseArtistsViewController: UICollectionViewDelegate, UICollectionVie
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ChooseArtistsCollectionViewCell.reuseIndentifier, for: indexPath) as?  ChooseArtistsCollectionViewCell {
-//            let httpsUrl = self.artistsViewModel[indexPath.row].imageUrl.replacingOccurrences(of: "http", with: "https")
-//            cell.circularArtistImage.load(url: httpsUrl)
             cell.viewModel = self.artistsViewModel[indexPath.item]
             return cell
         }
@@ -114,11 +141,25 @@ extension ChooseArtistsViewController: UICollectionViewDelegate, UICollectionVie
         let screenBounds = UIScreen.main.bounds
         return CGSize(width: screenBounds.width/4 , height: 100)
        }
+    
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        amount += 1
+        enableDoneButton(amount)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        amount -= 1
+        enableDoneButton(amount)
+    }
+    
 }
 // MARK: - Configure view
 extension ChooseArtistsViewController: CommonView {
     func setupViews() {
         view.addSubview(chooseArtistsTitle)
+        view.addSubview(searchBar)
+        view.addSubview(doneButton)
         view.addSubview(artistsCollectionView)
     }
     
@@ -126,14 +167,14 @@ extension ChooseArtistsViewController: CommonView {
         artistsCollectionView.delegate = self
         artistsCollectionView.dataSource = self
         artistsCollectionView.register(ChooseArtistsCollectionViewCell.self, forCellWithReuseIdentifier: ChooseArtistsCollectionViewCell.reuseIndentifier)
-        nextButton.isUserInteractionEnabled = false
-        nextButton.alpha = 0.3
+        doneButton.isUserInteractionEnabled = false
+        doneButton.alpha = 0.3
         setupNavigationTitle(title: CommonStrings.createAccount)
         view.backgroundColor = UIColor.mainBackground
     }
     
     func setupConstraints() {
-        constrain(chooseArtistsTitle, artistsCollectionView) { title, collection in
+        constrain(chooseArtistsTitle, artistsCollectionView, searchBar, doneButton) { title, collection, search, button in
             guard let superView = title.superview else {
                 return
             }
@@ -143,7 +184,17 @@ extension ChooseArtistsViewController: CommonView {
             title.safeAreaLayoutGuide.top == superView.safeAreaLayoutGuide.top + 20
             title.centerX == superView.centerX
             
-            collection.top == title.bottom + 20
+            
+            search.height == 30
+            search.leftMargin == superView.leftMargin + 10
+            search.rightMargin == superView.rightMargin + 10
+            search.top == title.bottom + 30
+            search.centerX == superView.centerX
+            
+            button.centerX == superView.centerX
+            button.top == search.bottom + 60
+            
+            collection.top == button.bottom + 50
             collection.leftMargin == superView.leftMargin
             collection.rightMargin == superView.rightMargin
             collection.height == superView.height

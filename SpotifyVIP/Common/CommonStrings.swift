@@ -24,4 +24,6 @@ class CommonStrings {
     static let errorToFindArtists = "Something wrong with artists search"
     static let tryAgainLater = "Try again later"
     static let chooseThreeOrMoreArtists = "Choose 3 or more artists you like."
+    static let search = "  Search"
+    static let done = "done"
 }

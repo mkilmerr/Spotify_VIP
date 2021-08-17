@@ -7,7 +7,6 @@
 
 import UIKit
 
-
 extension UIImageView {
     func load(url: String , cache: URLCache? = nil) {
         let placeHolder = CommonAssets.spotifyWhiteLogo

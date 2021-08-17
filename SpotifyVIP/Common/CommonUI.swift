@@ -352,6 +352,65 @@ class RoundedActionButton: UIButton {
             button.height == 60
         }
     }
-    
 }
 
+class SearchBarArtists: UIView {
+    private let leftImage = UIImageView()
+    
+    public var textField: UITextField = {
+       let textField = UITextField()
+        textField.autocorrectionType = .no
+        textField.autocapitalizationType = .none
+        textField.translatesAutoresizingMaskIntoConstraints = false
+        return textField
+    }()
+    
+    
+    override init(frame: CGRect) {
+        super.init(frame: frame)
+        self.configureView()
+        self.setupSearchBar()
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    private func configureView() {
+        translatesAutoresizingMaskIntoConstraints = false
+        backgroundColor = UIColor.white
+        textField.layer.cornerRadius = 10
+        textField.backgroundColor = UIColor.white
+        textField.textColor = UIColor.black
+        textField.font = UIFont(name: "Gotham-Bold", size: 20)
+        textField.placeholder = CommonStrings.search
+
+        addSubview(textField)
+    }
+    
+    
+    private func setupSearchBar() {
+        textField.leftViewMode = UITextField.ViewMode.always
+        textField.leftViewMode = .always
+        
+        leftImage.isUserInteractionEnabled = true
+        leftImage.contentMode = .scaleAspectFit
+        leftImage.translatesAutoresizingMaskIntoConstraints = false
+        
+        leftImage.image = CommonAssets.search
+        
+        let leftView = UIImageView(frame: CGRect(x: 0, y: 0, width: 10, height: 10))
+        leftView.contentMode = .scaleAspectFit
+        leftView.image = CommonAssets.search
+        textField.leftView = leftView
+        
+        constrain(self, textField) { view, textfield in
+            
+            textfield.leftMargin == view.leftMargin
+            textfield.rightMargin == view.rightMargin
+            textfield.height == 70
+            textfield.centerX == view.centerX
+        }
+    }
+}
