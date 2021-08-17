@@ -184,21 +184,19 @@ extension ChooseArtistsViewController: CommonView {
             title.safeAreaLayoutGuide.top == superView.safeAreaLayoutGuide.top + 20
             title.centerX == superView.centerX
             
-            
             search.height == 30
             search.leftMargin == superView.leftMargin + 10
             search.rightMargin == superView.rightMargin + 10
-            search.top == title.bottom + 30
+            search.top == title.bottom + 20
             search.centerX == superView.centerX
             
             button.centerX == superView.centerX
-            button.top == search.bottom + 60
+            button.safeAreaLayoutGuide.bottom == superView.safeAreaLayoutGuide.bottom
             
-            collection.top == button.bottom + 50
+            collection.top == search.bottom + 20
             collection.leftMargin == superView.leftMargin
             collection.rightMargin == superView.rightMargin
-            collection.height == superView.height
-
+            collection.height == superView.height * 0.55
         }
     }
 }
