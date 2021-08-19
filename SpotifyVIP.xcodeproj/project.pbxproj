@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1F169A5726C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F169A5626C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift */; };
 		1F169A5C26C99F5D00A3946F /* ImageView+LoadURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F169A5B26C99F5D00A3946F /* ImageView+LoadURL.swift */; };
+		1F1B175926CE8452007EAC8C /* FindindMusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B175826CE8452007EAC8C /* FindindMusicViewController.swift */; };
+		1F1B175E26CE8696007EAC8C /* search_music.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B175D26CE8696007EAC8C /* search_music.json */; };
+		1F1B176526CE8D5C007EAC8C /* FindingMusicConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B176426CE8D5C007EAC8C /* FindingMusicConfigurator.swift */; };
+		1F1B176D26CE8D8F007EAC8C /* FindingMusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B176C26CE8D8F007EAC8C /* FindingMusicRouter.swift */; };
 		1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */; };
 		1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614226BFECF10085133C /* AppDelegate.swift */; };
 		1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614426BFECF10085133C /* SceneDelegate.swift */; };
@@ -110,6 +114,10 @@
 		1222927BB13C51AC93E4CAFB /* Pods-SpotifyVIP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SpotifyVIP.release.xcconfig"; path = "Target Support Files/Pods-SpotifyVIP/Pods-SpotifyVIP.release.xcconfig"; sourceTree = "<group>"; };
 		1F169A5626C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F169A5B26C99F5D00A3946F /* ImageView+LoadURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ImageView+LoadURL.swift"; sourceTree = "<group>"; };
+		1F1B175826CE8452007EAC8C /* FindindMusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindindMusicViewController.swift; sourceTree = "<group>"; };
+		1F1B175D26CE8696007EAC8C /* search_music.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_music.json; sourceTree = "<group>"; };
+		1F1B176426CE8D5C007EAC8C /* FindingMusicConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingMusicConfigurator.swift; sourceTree = "<group>"; };
+		1F1B176C26CE8D8F007EAC8C /* FindingMusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingMusicRouter.swift; sourceTree = "<group>"; };
 		1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailPresenter.swift; sourceTree = "<group>"; };
 		1F2A613F26BFECF10085133C /* SpotifyVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A614226BFECF10085133C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -225,6 +233,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F1B175626CE8429007EAC8C /* FindingMusic */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B176226CE8D42007EAC8C /* Configurator */,
+				1F1B176326CE8D4A007EAC8C /* Router */,
+				1F1B175726CE8441007EAC8C /* View */,
+			);
+			path = FindingMusic;
+			sourceTree = "<group>";
+		};
+		1F1B175726CE8441007EAC8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B175826CE8452007EAC8C /* FindindMusicViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1F1B176226CE8D42007EAC8C /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B176426CE8D5C007EAC8C /* FindingMusicConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1F1B176326CE8D4A007EAC8C /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B176C26CE8D8F007EAC8C /* FindingMusicRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
 		1F22710E26C3180900F279BC /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -361,6 +403,7 @@
 				1FB8811626BFF34500008AEA /* OnBoarding */,
 				1F8D903826C59C230060BE05 /* ChooseArtirts */,
 				1F693DF326CC78D300C42169 /* GreatPicks */,
+				1F1B175626CE8429007EAC8C /* FindingMusic */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -701,6 +744,7 @@
 			children = (
 				1F693DFD26CC7D0400C42169 /* notification.json */,
 				1FE47FD726C95DF000E57901 /* loading_search.json */,
+				1F1B175D26CE8696007EAC8C /* search_music.json */,
 				1F868A7226C968FD006224DE /* dot_loading.json */,
 			);
 			path = AnimationAssets;
@@ -842,6 +886,7 @@
 				1F92176426C002EF00ED80F0 /* Gotham-UltraItalic.otf in Resources */,
 				1F92175426C002E600ED80F0 /* Gotham-BookItalic.otf in Resources */,
 				1F92178026C002FF00ED80F0 /* GothamLight.ttf in Resources */,
+				1F1B175E26CE8696007EAC8C /* search_music.json in Resources */,
 				1F92175C26C002EB00ED80F0 /* Gotham-Thin.otf in Resources */,
 				1F92177426C002F900ED80F0 /* GothamBoldItalic.ttf in Resources */,
 				1F92177C26C002FD00ED80F0 /* GothamBookItalic.ttf in Resources */,
@@ -1010,8 +1055,10 @@
 				1F8D906026C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift in Sources */,
 				1FA7E21D26C956B500EEF652 /* ChooseArtistsConfigurator.swift in Sources */,
 				1F8D904226C59CEA0060BE05 /* NetworkClient.swift in Sources */,
+				1F1B176D26CE8D8F007EAC8C /* FindingMusicRouter.swift in Sources */,
 				1F8D908226C5AEFB0060BE05 /* ChooseArtistsAPIStore.swift in Sources */,
 				1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */,
+				1F1B175926CE8452007EAC8C /* FindindMusicViewController.swift in Sources */,
 				1FA7E21326C9504500EEF652 /* ChooseArtistsPresenter.swift in Sources */,
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
 				1F37D8CD26CD235B009344DC /* GreatPicksCollectionViewCell.swift in Sources */,
@@ -1026,6 +1073,7 @@
 				1FA7E22226C959DA00EEF652 /* CommonAnimations.swift in Sources */,
 				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
 				1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */,
+				1F1B176526CE8D5C007EAC8C /* FindingMusicConfigurator.swift in Sources */,
 				1FB8912926C535BA000F9A5F /* SignupPasswordInteractor.swift in Sources */,
 				1F37D8DB26CD469B009344DC /* GreatPicksConfigurator.swift in Sources */,
 				1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */,

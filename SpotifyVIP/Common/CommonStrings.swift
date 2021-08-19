@@ -27,4 +27,5 @@ class CommonStrings {
     static let search = "  Search"
     static let done = "done"
     static let greatPicks = "Great picks!"
+    static let findingMusicForYou = "Finding music for you......"
 }

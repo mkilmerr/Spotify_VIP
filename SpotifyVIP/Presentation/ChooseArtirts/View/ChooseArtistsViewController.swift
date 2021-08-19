@@ -102,7 +102,7 @@ extension ChooseArtistsViewController {
 //MARK: - Fetch artists
 extension ChooseArtistsViewController: ChooseArtistsViewControllerOutput {
     func fetchChooseArtists() {
-        CommonAnimations.shared.presentLoadingSearch(self)
+        CommonAnimations.shared.presentAnimation(self, type: .loading)
         output?.fetchChooseArtists()
     }
 }

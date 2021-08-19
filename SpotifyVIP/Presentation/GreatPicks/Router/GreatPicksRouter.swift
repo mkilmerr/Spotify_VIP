@@ -21,8 +21,8 @@ class GreatPicksRouter {
 
 extension GreatPicksRouter: GreatPicksRouterProtcol {
     func navigateToFindindMusicScreen() {
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.viewController?.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
+            self.viewController?.navigationController?.pushViewController(FindindMusicViewController(), animated: true)
         }
     }
 }
