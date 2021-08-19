@@ -54,7 +54,7 @@ class OnboardingViewController: UIViewController {
     }()
     
     private lazy var loginButton: RoundedButton = {
-        let button = RoundedButton(title: CommonStrings.logIn,hasBorder: false)
+        let button = RoundedButton(title: CommonStrings.logIn, hasBorder: false)
         return button
     }()
     

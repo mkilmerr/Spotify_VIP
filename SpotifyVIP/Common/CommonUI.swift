@@ -75,15 +75,16 @@ class RoundedButton: UIButton {
     private var color = UIColor.white
     private var image: UIImage?
     private var hasBorder: Bool = true
-   
+    private var fontSize = 0
     
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init(title: String, image: UIImage? = nil, hasBorder: Bool = true) {
+    required init(title: String, image: UIImage? = nil, hasBorder: Bool = true, fontSize: Int = 17) {
         self.title = title
         self.image = image
+        self.fontSize = fontSize
         self.hasBorder = hasBorder
         super.init(frame: .null)
         self.setupButton()
@@ -94,7 +95,7 @@ class RoundedButton: UIButton {
     }
     
     private func setupButton() {
-        let attributeds = NSAttributedString(string: title,attributes: [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font: UIFont(name: "Gotham-Bold", size: 17) ?? UIFont()])
+        let attributeds = NSAttributedString(string: title,attributes: [NSAttributedString.Key.foregroundColor : UIColor.white, NSAttributedString.Key.font: UIFont(name: "Gotham-Bold", size: CGFloat(fontSize)) ?? UIFont()])
         
         setAttributedTitle(attributeds, for: .normal)
         backgroundColor = UIColor.mainBackground
@@ -322,14 +323,16 @@ class CommonSignupTextField: UIView {
 class RoundedActionButton: UIButton {
     private var title = ""
     private var color = UIColor.white
+    private var fontSize = 17
     
     override init(frame: CGRect) {
         super.init(frame: frame)
     }
     
-    required init(title: String, color: UIColor) {
+    required init(title: String, color: UIColor, fontSize: Int = 17) {
         self.title = title
         self.color = color
+        self.fontSize = fontSize
         super.init(frame: .null)
         self.setupButton()
     }
@@ -339,7 +342,7 @@ class RoundedActionButton: UIButton {
     }
     
     private func setupButton() {
-        let attributeds = NSAttributedString(string: title.uppercased(),attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font: UIFont(name: "Gotham-Bold", size: 17) ?? UIFont()])
+        let attributeds = NSAttributedString(string: title.uppercased(),attributes: [NSAttributedString.Key.foregroundColor : UIColor.black, NSAttributedString.Key.font: UIFont(name: "Gotham-Bold", size: CGFloat(fontSize)) ?? UIFont()])
         
         setAttributedTitle(attributeds, for: .normal)
         backgroundColor = color

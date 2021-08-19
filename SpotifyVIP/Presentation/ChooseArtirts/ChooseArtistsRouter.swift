@@ -20,6 +20,6 @@ class ChooseArtistsRouter {
 
 extension ChooseArtistsRouter: ChooseArtistsRouterProtocol {
     public func navigateToGreatPicksScreen() {
-        viewController?.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+        viewController?.navigationController?.pushViewController(GreatPicksViewController(), animated: true)
     }
 }

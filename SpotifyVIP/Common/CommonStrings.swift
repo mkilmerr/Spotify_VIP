@@ -28,4 +28,9 @@ class CommonStrings {
     static let done = "done"
     static let greatPicks = "Great picks!"
     static let findingMusicForYou = "Finding music for you......"
+    static let turnOnPushNotifications = "Turn on push notifications."
+    static let getUpdates = "Get updates about new music, special offers, events and more."
+    static let turnOnNotifications = "Turn on notifications"
+    static let notNow = "Not now"
+    static let manageYourNotification = "Manage your notification categories in settings anytime."
 }

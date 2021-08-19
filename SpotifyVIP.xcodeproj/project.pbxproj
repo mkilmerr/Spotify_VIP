@@ -13,6 +13,7 @@
 		1F1B175E26CE8696007EAC8C /* search_music.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F1B175D26CE8696007EAC8C /* search_music.json */; };
 		1F1B176526CE8D5C007EAC8C /* FindingMusicConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B176426CE8D5C007EAC8C /* FindingMusicConfigurator.swift */; };
 		1F1B176D26CE8D8F007EAC8C /* FindingMusicRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B176C26CE8D8F007EAC8C /* FindingMusicRouter.swift */; };
+		1F1B177426CE9003007EAC8C /* TurnOnNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F1B177326CE9003007EAC8C /* TurnOnNotificationsViewController.swift */; };
 		1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */; };
 		1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614226BFECF10085133C /* AppDelegate.swift */; };
 		1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A614426BFECF10085133C /* SceneDelegate.swift */; };
@@ -118,6 +119,7 @@
 		1F1B175D26CE8696007EAC8C /* search_music.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = search_music.json; sourceTree = "<group>"; };
 		1F1B176426CE8D5C007EAC8C /* FindingMusicConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingMusicConfigurator.swift; sourceTree = "<group>"; };
 		1F1B176C26CE8D8F007EAC8C /* FindingMusicRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindingMusicRouter.swift; sourceTree = "<group>"; };
+		1F1B177326CE9003007EAC8C /* TurnOnNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TurnOnNotificationsViewController.swift; sourceTree = "<group>"; };
 		1F22710626C30AA800F279BC /* SignupEmailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailPresenter.swift; sourceTree = "<group>"; };
 		1F2A613F26BFECF10085133C /* SpotifyVIP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpotifyVIP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A614226BFECF10085133C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -267,6 +269,22 @@
 			path = Router;
 			sourceTree = "<group>";
 		};
+		1F1B177126CE8FAB007EAC8C /* TurnOnNotifications */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B177226CE8FED007EAC8C /* View */,
+			);
+			path = TurnOnNotifications;
+			sourceTree = "<group>";
+		};
+		1F1B177226CE8FED007EAC8C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F1B177326CE9003007EAC8C /* TurnOnNotificationsViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		1F22710E26C3180900F279BC /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +417,7 @@
 		1F2A617626BFED430085133C /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				1F1B177126CE8FAB007EAC8C /* TurnOnNotifications */,
 				1FB9352B26C3211000DB4ACD /* Signup */,
 				1FB8811626BFF34500008AEA /* OnBoarding */,
 				1F8D903826C59C230060BE05 /* ChooseArtirts */,
@@ -1043,6 +1062,7 @@
 				1F8D907D26C5ADC90060BE05 /* ChooseArtistInteractor.swift in Sources */,
 				1F8D902A26C58AE40060BE05 /* SignupDateBirthPresenter.swift in Sources */,
 				1F92174826C0017800ED80F0 /* CommonStrings.swift in Sources */,
+				1F1B177426CE9003007EAC8C /* TurnOnNotificationsViewController.swift in Sources */,
 				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
 				1F8D905326C59F7E0060BE05 /* Artist.swift in Sources */,

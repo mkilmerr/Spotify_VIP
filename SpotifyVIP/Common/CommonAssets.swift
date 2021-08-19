@@ -20,4 +20,5 @@ class CommonAssets {
     static let eminem = UIImage(named: "eminem")
     static let madonna = UIImage(named: "madonna")
     static let michael = UIImage(named: "michael")
+    static let spotifyNotification = UIImage(named: "spotify_notification")
 }

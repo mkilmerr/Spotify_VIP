@@ -22,7 +22,7 @@ class FindingMusicRouter {
 extension FindingMusicRouter: FindingMusicRouterProtocol {
     func navigateToTurnNotificationScreen() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.5) {
-            self.viewController?.navigationController?.pushViewController(OnboardingViewController(), animated: true)
+            self.viewController?.navigationController?.pushViewController(TurnOnNotificationsViewController(), animated: true)
         }
     }
 }
