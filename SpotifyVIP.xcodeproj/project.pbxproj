@@ -16,9 +16,17 @@
 		1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A614D26BFECF20085133C /* LaunchScreen.storyboard */; };
 		1F2A615A26BFECF20085133C /* SpotifyVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A615926BFECF20085133C /* SpotifyVIPTests.swift */; };
 		1F2A616526BFECF20085133C /* SpotifyVIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */; };
+		1F37D8CD26CD235B009344DC /* GreatPicksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */; };
+		1F37D8D626CD458E009344DC /* GreatPicksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */; };
+		1F37D8DB26CD469B009344DC /* GreatPicksConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */; };
+		1F37D8E026CD46AF009344DC /* GreatPicksInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8DF26CD46AF009344DC /* GreatPicksInteractor.swift */; };
+		1F37D8E626CD46F5009344DC /* GreatPicksViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8E526CD46F5009344DC /* GreatPicksViewModel.swift */; };
+		1F37D8EE26CD4915009344DC /* GreatPicksPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8ED26CD4915009344DC /* GreatPicksPresenter.swift */; };
 		1F60F17F26C14764000B2B0E /* OnBoardingConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F17E26C14764000B2B0E /* OnBoardingConfigurator.swift */; };
 		1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F18626C1480E000B2B0E /* OnBoardingRouter.swift */; };
 		1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */; };
+		1F693DF626CC792500C42169 /* GreatPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F693DF526CC792500C42169 /* GreatPicksViewController.swift */; };
+		1F693DFE26CC7D0400C42169 /* notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F693DFD26CC7D0400C42169 /* notification.json */; };
 		1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */; };
 		1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */; };
 		1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */; };
@@ -115,9 +123,17 @@
 		1F2A616026BFECF20085133C /* SpotifyVIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyVIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyVIPUITests.swift; sourceTree = "<group>"; };
 		1F2A616626BFECF20085133C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksCollectionViewCell.swift; sourceTree = "<group>"; };
+		1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksRouter.swift; sourceTree = "<group>"; };
+		1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksConfigurator.swift; sourceTree = "<group>"; };
+		1F37D8DF26CD46AF009344DC /* GreatPicksInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksInteractor.swift; sourceTree = "<group>"; };
+		1F37D8E526CD46F5009344DC /* GreatPicksViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksViewModel.swift; sourceTree = "<group>"; };
+		1F37D8ED26CD4915009344DC /* GreatPicksPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksPresenter.swift; sourceTree = "<group>"; };
 		1F60F17E26C14764000B2B0E /* OnBoardingConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingConfigurator.swift; sourceTree = "<group>"; };
 		1F60F18626C1480E000B2B0E /* OnBoardingRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingRouter.swift; sourceTree = "<group>"; };
 		1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewController.swift; sourceTree = "<group>"; };
+		1F693DF526CC792500C42169 /* GreatPicksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksViewController.swift; sourceTree = "<group>"; };
+		1F693DFD26CC7D0400C42169 /* notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notification.json; sourceTree = "<group>"; };
 		1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNavigationExtensions.swift; sourceTree = "<group>"; };
 		1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailConfigurator.swift; sourceTree = "<group>"; };
 		1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailRouter.swift; sourceTree = "<group>"; };
@@ -344,8 +360,49 @@
 				1FB9352B26C3211000DB4ACD /* Signup */,
 				1FB8811626BFF34500008AEA /* OnBoarding */,
 				1F8D903826C59C230060BE05 /* ChooseArtirts */,
+				1F693DF326CC78D300C42169 /* GreatPicks */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1F37D8D126CD454A009344DC /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		1F37D8D226CD4552009344DC /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		1F37D8D326CD4559009344DC /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				1F37D8DF26CD46AF009344DC /* GreatPicksInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		1F37D8D426CD4577009344DC /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				1F37D8ED26CD4915009344DC /* GreatPicksPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		1F37D8E426CD46D8009344DC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				1F37D8E526CD46F5009344DC /* GreatPicksViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		1F60F19026C14A52000B2B0E /* SignupEmail */ = {
@@ -358,6 +415,28 @@
 				1F22711B26C3184A00F279BC /* Presenter */,
 			);
 			path = SignupEmail;
+			sourceTree = "<group>";
+		};
+		1F693DF326CC78D300C42169 /* GreatPicks */ = {
+			isa = PBXGroup;
+			children = (
+				1F37D8D126CD454A009344DC /* Configurator */,
+				1F37D8D226CD4552009344DC /* Router */,
+				1F693DF426CC78F500C42169 /* View */,
+				1F37D8E426CD46D8009344DC /* ViewModel */,
+				1F37D8D326CD4559009344DC /* Interactor */,
+				1F37D8D426CD4577009344DC /* Presenter */,
+			);
+			path = GreatPicks;
+			sourceTree = "<group>";
+		};
+		1F693DF426CC78F500C42169 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1F693DF526CC792500C42169 /* GreatPicksViewController.swift */,
+				1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		1F8D901D26C589C50060BE05 /* Configurator */ = {
@@ -620,6 +699,7 @@
 		1FE47FD326C95DAE00E57901 /* AnimationAssets */ = {
 			isa = PBXGroup;
 			children = (
+				1F693DFD26CC7D0400C42169 /* notification.json */,
 				1FE47FD726C95DF000E57901 /* loading_search.json */,
 				1F868A7226C968FD006224DE /* dot_loading.json */,
 			);
@@ -773,6 +853,7 @@
 				1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */,
 				1F92174C26C002C500ED80F0 /* Gotham-Black.otf in Resources */,
 				1FE47FD826C95DF000E57901 /* loading_search.json in Resources */,
+				1F693DFE26CC7D0400C42169 /* notification.json in Resources */,
 				1F2A614C26BFECF20085133C /* Assets.xcassets in Resources */,
 				1F92176826C002F200ED80F0 /* Gotham-XLight.otf in Resources */,
 				1F92177026C002F600ED80F0 /* GothamBold.ttf in Resources */,
@@ -920,8 +1001,11 @@
 				1FB8812A26BFF55D00008AEA /* CommonColors.swift in Sources */,
 				1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */,
 				1F8D905326C59F7E0060BE05 /* Artist.swift in Sources */,
+				1F37D8E626CD46F5009344DC /* GreatPicksViewModel.swift in Sources */,
 				1F85FD4A26C2E92000392C99 /* SignupEmailInteractor.swift in Sources */,
+				1F37D8D626CD458E009344DC /* GreatPicksRouter.swift in Sources */,
 				1FB8913F26C57314000F9A5F /* SignupDateBirthViewController.swift in Sources */,
+				1F37D8E026CD46AF009344DC /* GreatPicksInteractor.swift in Sources */,
 				1FB8815326BFFA5800008AEA /* CommonAssets.swift in Sources */,
 				1F8D906026C5A3BA0060BE05 /* ChooseArtistsStoreProtocol.swift in Sources */,
 				1FA7E21D26C956B500EEF652 /* ChooseArtistsConfigurator.swift in Sources */,
@@ -930,20 +1014,24 @@
 				1FB8913326C5392C000F9A5F /* SignupPasswordRouter.swift in Sources */,
 				1FA7E21326C9504500EEF652 /* ChooseArtistsPresenter.swift in Sources */,
 				1F60F18726C1480E000B2B0E /* OnBoardingRouter.swift in Sources */,
+				1F37D8CD26CD235B009344DC /* GreatPicksCollectionViewCell.swift in Sources */,
 				1FA7E20126C93AC000EEF652 /* URLRequest+JSON.swift in Sources */,
 				1FA7E20E26C947D800EEF652 /* ChooseArtistsViewController.swift in Sources */,
 				1F8D907826C5AD5C0060BE05 /* ArtistViewModel.swift in Sources */,
 				1F8D905B26C5A38F0060BE05 /* ChooseArtistWorker.swift in Sources */,
 				1F8D904A26C59EE40060BE05 /* Parsable.swift in Sources */,
 				1F8D908726C5AF6E0060BE05 /* Endpoints.swift in Sources */,
+				1F693DF626CC792500C42169 /* GreatPicksViewController.swift in Sources */,
 				1FB8811D26BFF37F00008AEA /* OnboardingViewController.swift in Sources */,
 				1FA7E22226C959DA00EEF652 /* CommonAnimations.swift in Sources */,
 				1F22710726C30AA800F279BC /* SignupEmailPresenter.swift in Sources */,
 				1F8D903426C58D2A0060BE05 /* SignupDateBirthRouter.swift in Sources */,
 				1FB8912926C535BA000F9A5F /* SignupPasswordInteractor.swift in Sources */,
+				1F37D8DB26CD469B009344DC /* GreatPicksConfigurator.swift in Sources */,
 				1F2A614326BFECF10085133C /* AppDelegate.swift in Sources */,
 				1F8D902226C58A100060BE05 /* SignupDateBirthInteractor.swift in Sources */,
 				1F2A614526BFECF10085133C /* SceneDelegate.swift in Sources */,
+				1F37D8EE26CD4915009344DC /* GreatPicksPresenter.swift in Sources */,
 				1FA7E20926C941A500EEF652 /* Data+JSON.swift in Sources */,
 				1FB8814726BFF96E00008AEA /* CommonView.swift in Sources */,
 				1F169A5726C99D5700A3946F /* ChooseArtistsCollectionViewCell.swift in Sources */,

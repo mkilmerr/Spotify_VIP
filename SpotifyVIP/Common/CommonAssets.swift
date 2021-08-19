@@ -16,4 +16,8 @@ class CommonAssets {
     static let unlock = UIImage(named: "unlock")
     static let search = UIImage(named: "search")
     static let check = UIImage(named: "check")
+    static let caetano = UIImage(named: "caetano")
+    static let eminem = UIImage(named: "eminem")
+    static let madonna = UIImage(named: "madonna")
+    static let michael = UIImage(named: "michael")
 }

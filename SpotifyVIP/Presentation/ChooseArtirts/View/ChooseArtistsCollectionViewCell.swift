@@ -8,7 +8,6 @@
 import UIKit
 import Cartography
 import SDWebImage
-import WebKit
 
 class ChooseArtistsCollectionViewCell: UICollectionViewCell {
     static var reuseIndentifier: String {

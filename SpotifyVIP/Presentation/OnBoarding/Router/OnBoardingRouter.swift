@@ -24,6 +24,6 @@ final class OnBoardingRouter {
 
 extension OnBoardingRouter: OnBoardingRouterProtocol {
     func navigateToSignupEmailScreen() {
-        viewController?.navigationController?.pushViewController(SignupEmailViewController(), animated: true)
+        viewController?.navigationController?.pushViewController(GreatPicksViewController(), animated: true)
     }
 }

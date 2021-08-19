@@ -26,4 +26,5 @@ class CommonStrings {
     static let chooseThreeOrMoreArtists = "Choose 3 or more artists you like."
     static let search = "  Search"
     static let done = "done"
+    static let greatPicks = "Great picks!"
 }
