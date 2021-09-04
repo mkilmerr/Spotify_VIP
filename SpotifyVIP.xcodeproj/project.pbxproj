@@ -21,8 +21,6 @@
 		1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A614D26BFECF20085133C /* LaunchScreen.storyboard */; };
 		1F2A615A26BFECF20085133C /* SpotifyVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A615926BFECF20085133C /* SpotifyVIPTests.swift */; };
 		1F2A616526BFECF20085133C /* SpotifyVIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */; };
-		1F36998526E397F1005F5E6F /* SignupEmailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36998426E397F1005F5E6F /* SignupEmailViewControllerTests.swift */; };
-		1F36998F26E39BD1005F5E6F /* SignupEmailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36998E26E39BD1005F5E6F /* SignupEmailInteractorTests.swift */; };
 		1F37D8CD26CD235B009344DC /* GreatPicksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */; };
 		1F37D8D626CD458E009344DC /* GreatPicksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */; };
 		1F37D8DB26CD469B009344DC /* GreatPicksConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */; };
@@ -34,6 +32,10 @@
 		1F60F18C26C14A42000B2B0E /* SignupEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */; };
 		1F693DF626CC792500C42169 /* GreatPicksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F693DF526CC792500C42169 /* GreatPicksViewController.swift */; };
 		1F693DFE26CC7D0400C42169 /* notification.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F693DFD26CC7D0400C42169 /* notification.json */; };
+		1F6A46F426E3E43100B81B45 /* SignupEmailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A46F326E3E43100B81B45 /* SignupEmailViewControllerTests.swift */; };
+		1F6A470526E3E49700B81B45 /* SignupEmailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A470426E3E49700B81B45 /* SignupEmailInteractorTests.swift */; };
+		1F6A470D26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A470C26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift */; };
+		1F6A472326E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A472226E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift */; };
 		1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */; };
 		1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */; };
 		1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */; };
@@ -116,6 +118,13 @@
 			remoteGlobalIDString = 1F2A613E26BFECF10085133C;
 			remoteInfo = SpotifyVIP;
 		};
+		1F3699A526E3A017005F5E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2A613726BFECF10085133C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2A613E26BFECF10085133C;
+			remoteInfo = SpotifyVIP;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -143,9 +152,7 @@
 		1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyVIPUITests.swift; sourceTree = "<group>"; };
 		1F2A616626BFECF20085133C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F36997626E397A7005F5E6F /* SignupEmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignupEmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F36997A26E397A7005F5E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F36998426E397F1005F5E6F /* SignupEmailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewControllerTests.swift; sourceTree = "<group>"; };
-		1F36998E26E39BD1005F5E6F /* SignupEmailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractorTests.swift; sourceTree = "<group>"; };
+		1F3699A026E3A017005F5E6F /* SignupPasswordTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignupPasswordTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksRouter.swift; sourceTree = "<group>"; };
 		1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksConfigurator.swift; sourceTree = "<group>"; };
@@ -157,6 +164,10 @@
 		1F60F18B26C14A42000B2B0E /* SignupEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewController.swift; sourceTree = "<group>"; };
 		1F693DF526CC792500C42169 /* GreatPicksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksViewController.swift; sourceTree = "<group>"; };
 		1F693DFD26CC7D0400C42169 /* notification.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notification.json; sourceTree = "<group>"; };
+		1F6A46F326E3E43100B81B45 /* SignupEmailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewControllerTests.swift; sourceTree = "<group>"; };
+		1F6A470426E3E49700B81B45 /* SignupEmailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractorTests.swift; sourceTree = "<group>"; };
+		1F6A470C26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewControllerTests.swift; sourceTree = "<group>"; };
+		1F6A472226E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordInteractorTests.swift; sourceTree = "<group>"; };
 		1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNavigationExtensions.swift; sourceTree = "<group>"; };
 		1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailConfigurator.swift; sourceTree = "<group>"; };
 		1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailRouter.swift; sourceTree = "<group>"; };
@@ -246,6 +257,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F36997326E397A7005F5E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F36999D26E3A017005F5E6F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -375,7 +393,6 @@
 				1F2A614126BFECF10085133C /* SpotifyVIP */,
 				1F2A615826BFECF20085133C /* SpotifyVIPTests */,
 				1F2A616326BFECF20085133C /* SpotifyVIPUITests */,
-				1F36997726E397A7005F5E6F /* SignupEmailTests */,
 				1F2A614026BFECF10085133C /* Products */,
 				773B66AF08A7F84241E13A41 /* Pods */,
 				CA7CDE72B2138E702B1D36A1 /* Frameworks */,
@@ -389,6 +406,7 @@
 				1F2A615526BFECF20085133C /* SpotifyVIPTests.xctest */,
 				1F2A616026BFECF20085133C /* SpotifyVIPUITests.xctest */,
 				1F36997626E397A7005F5E6F /* SignupEmailTests.xctest */,
+				1F3699A026E3A017005F5E6F /* SignupPasswordTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -412,6 +430,8 @@
 		1F2A615826BFECF20085133C /* SpotifyVIPTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F6A470B26E3E56E00B81B45 /* SignupPasswordTests */,
+				1F6A46F226E3E41800B81B45 /* SignupEmail */,
 				1F2A615926BFECF20085133C /* SpotifyVIPTests.swift */,
 				1F2A615B26BFECF20085133C /* Info.plist */,
 			);
@@ -447,16 +467,6 @@
 				1F1B175626CE8429007EAC8C /* FindingMusic */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		1F36997726E397A7005F5E6F /* SignupEmailTests */ = {
-			isa = PBXGroup;
-			children = (
-				1F36998426E397F1005F5E6F /* SignupEmailViewControllerTests.swift */,
-				1F36998E26E39BD1005F5E6F /* SignupEmailInteractorTests.swift */,
-				1F36997A26E397A7005F5E6F /* Info.plist */,
-			);
-			path = SignupEmailTests;
 			sourceTree = "<group>";
 		};
 		1F37D8D126CD454A009344DC /* Configurator */ = {
@@ -531,6 +541,24 @@
 				1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		1F6A46F226E3E41800B81B45 /* SignupEmail */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A46F326E3E43100B81B45 /* SignupEmailViewControllerTests.swift */,
+				1F6A470426E3E49700B81B45 /* SignupEmailInteractorTests.swift */,
+			);
+			path = SignupEmail;
+			sourceTree = "<group>";
+		};
+		1F6A470B26E3E56E00B81B45 /* SignupPasswordTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A470C26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift */,
+				1F6A472226E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift */,
+			);
+			path = SignupPasswordTests;
 			sourceTree = "<group>";
 		};
 		1F8D901D26C589C50060BE05 /* Configurator */ = {
@@ -903,6 +931,24 @@
 			productReference = 1F36997626E397A7005F5E6F /* SignupEmailTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		1F36999F26E3A017005F5E6F /* SignupPasswordTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F3699A726E3A017005F5E6F /* Build configuration list for PBXNativeTarget "SignupPasswordTests" */;
+			buildPhases = (
+				1F36999C26E3A017005F5E6F /* Sources */,
+				1F36999D26E3A017005F5E6F /* Frameworks */,
+				1F36999E26E3A017005F5E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F3699A626E3A017005F5E6F /* PBXTargetDependency */,
+			);
+			name = SignupPasswordTests;
+			productName = SignupPasswordTests;
+			productReference = 1F3699A026E3A017005F5E6F /* SignupPasswordTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -927,6 +973,10 @@
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 1F2A613E26BFECF10085133C;
 					};
+					1F36999F26E3A017005F5E6F = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1F2A613E26BFECF10085133C;
+					};
 				};
 			};
 			buildConfigurationList = 1F2A613A26BFECF10085133C /* Build configuration list for PBXProject "SpotifyVIP" */;
@@ -946,6 +996,7 @@
 				1F2A615426BFECF20085133C /* SpotifyVIPTests */,
 				1F2A615F26BFECF20085133C /* SpotifyVIPUITests */,
 				1F36997526E397A7005F5E6F /* SignupEmailTests */,
+				1F36999F26E3A017005F5E6F /* SignupPasswordTests */,
 			);
 		};
 /* End PBXProject section */
@@ -996,6 +1047,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F36997426E397A7005F5E6F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F36999E26E3A017005F5E6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1174,7 +1232,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6A46F426E3E43100B81B45 /* SignupEmailViewControllerTests.swift in Sources */,
+				1F6A470D26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift in Sources */,
+				1F6A470526E3E49700B81B45 /* SignupEmailInteractorTests.swift in Sources */,
 				1F2A615A26BFECF20085133C /* SpotifyVIPTests.swift in Sources */,
+				1F6A472326E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1190,8 +1252,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F36998F26E39BD1005F5E6F /* SignupEmailInteractorTests.swift in Sources */,
-				1F36998526E397F1005F5E6F /* SignupEmailViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F36999C26E3A017005F5E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1212,6 +1279,11 @@
 			isa = PBXTargetDependency;
 			target = 1F2A613E26BFECF10085133C /* SpotifyVIP */;
 			targetProxy = 1F36997B26E397A7005F5E6F /* PBXContainerItemProxy */;
+		};
+		1F3699A626E3A017005F5E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2A613E26BFECF10085133C /* SpotifyVIP */;
+			targetProxy = 1F3699A526E3A017005F5E6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1505,6 +1577,46 @@
 			};
 			name = Release;
 		};
+		1F3699A826E3A017005F5E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				INFOPLIST_FILE = SignupPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkilmer.SignupPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotifyVIP.app/SpotifyVIP";
+			};
+			name = Debug;
+		};
+		1F3699A926E3A017005F5E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				INFOPLIST_FILE = SignupPasswordTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkilmer.SignupPasswordTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotifyVIP.app/SpotifyVIP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1549,6 +1661,15 @@
 			buildConfigurations = (
 				1F36997D26E397A7005F5E6F /* Debug */,
 				1F36997E26E397A7005F5E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F3699A726E3A017005F5E6F /* Build configuration list for PBXNativeTarget "SignupPasswordTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F3699A826E3A017005F5E6F /* Debug */,
+				1F3699A926E3A017005F5E6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
