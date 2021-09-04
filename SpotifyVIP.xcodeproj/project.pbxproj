@@ -36,6 +36,8 @@
 		1F6A470526E3E49700B81B45 /* SignupEmailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A470426E3E49700B81B45 /* SignupEmailInteractorTests.swift */; };
 		1F6A470D26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A470C26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift */; };
 		1F6A472326E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A472226E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift */; };
+		1F6A472B26E3EC7900B81B45 /* ChooseArtistsAPIStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6A472A26E3EC7900B81B45 /* ChooseArtistsAPIStoreTests.swift */; };
+		1F6A473826E3EEFC00B81B45 /* top_artists.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F6A473726E3EEFC00B81B45 /* top_artists.json */; };
 		1F6B693526C1564000114CD1 /* CommonNavigationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */; };
 		1F85FD3D26C2E5C500392C99 /* SignupEmailConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */; };
 		1F85FD4226C2E62100392C99 /* SignupEmailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */; };
@@ -168,6 +170,8 @@
 		1F6A470426E3E49700B81B45 /* SignupEmailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractorTests.swift; sourceTree = "<group>"; };
 		1F6A470C26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewControllerTests.swift; sourceTree = "<group>"; };
 		1F6A472226E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordInteractorTests.swift; sourceTree = "<group>"; };
+		1F6A472A26E3EC7900B81B45 /* ChooseArtistsAPIStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseArtistsAPIStoreTests.swift; sourceTree = "<group>"; };
+		1F6A473726E3EEFC00B81B45 /* top_artists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = top_artists.json; sourceTree = "<group>"; };
 		1F6B693426C1564000114CD1 /* CommonNavigationExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonNavigationExtensions.swift; sourceTree = "<group>"; };
 		1F85FD3C26C2E5C500392C99 /* SignupEmailConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailConfigurator.swift; sourceTree = "<group>"; };
 		1F85FD4126C2E62100392C99 /* SignupEmailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailRouter.swift; sourceTree = "<group>"; };
@@ -430,6 +434,7 @@
 		1F2A615826BFECF20085133C /* SpotifyVIPTests */ = {
 			isa = PBXGroup;
 			children = (
+				1F6A472926E3EC0F00B81B45 /* ChooseArtistsTests */,
 				1F6A470B26E3E56E00B81B45 /* SignupPasswordTests */,
 				1F6A46F226E3E41800B81B45 /* SignupEmail */,
 				1F2A615926BFECF20085133C /* SpotifyVIPTests.swift */,
@@ -559,6 +564,23 @@
 				1F6A472226E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift */,
 			);
 			path = SignupPasswordTests;
+			sourceTree = "<group>";
+		};
+		1F6A472926E3EC0F00B81B45 /* ChooseArtistsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A473626E3EE8000B81B45 /* Responses */,
+				1F6A472A26E3EC7900B81B45 /* ChooseArtistsAPIStoreTests.swift */,
+			);
+			path = ChooseArtistsTests;
+			sourceTree = "<group>";
+		};
+		1F6A473626E3EE8000B81B45 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				1F6A473726E3EEFC00B81B45 /* top_artists.json */,
+			);
+			path = Responses;
 			sourceTree = "<group>";
 		};
 		1F8D901D26C589C50060BE05 /* Configurator */ = {
@@ -1036,6 +1058,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F6A473826E3EEFC00B81B45 /* top_artists.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1236,6 +1259,7 @@
 				1F6A470D26E3E58800B81B45 /* SignupPasswordViewControllerTests.swift in Sources */,
 				1F6A470526E3E49700B81B45 /* SignupEmailInteractorTests.swift in Sources */,
 				1F2A615A26BFECF20085133C /* SpotifyVIPTests.swift in Sources */,
+				1F6A472B26E3EC7900B81B45 /* ChooseArtistsAPIStoreTests.swift in Sources */,
 				1F6A472326E3E5EA00B81B45 /* SignupPasswordInteractorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
