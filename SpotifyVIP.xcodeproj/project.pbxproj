@@ -21,6 +21,8 @@
 		1F2A614F26BFECF20085133C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F2A614D26BFECF20085133C /* LaunchScreen.storyboard */; };
 		1F2A615A26BFECF20085133C /* SpotifyVIPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A615926BFECF20085133C /* SpotifyVIPTests.swift */; };
 		1F2A616526BFECF20085133C /* SpotifyVIPUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */; };
+		1F36998526E397F1005F5E6F /* SignupEmailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36998426E397F1005F5E6F /* SignupEmailViewControllerTests.swift */; };
+		1F36998F26E39BD1005F5E6F /* SignupEmailInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F36998E26E39BD1005F5E6F /* SignupEmailInteractorTests.swift */; };
 		1F37D8CD26CD235B009344DC /* GreatPicksCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */; };
 		1F37D8D626CD458E009344DC /* GreatPicksRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */; };
 		1F37D8DB26CD469B009344DC /* GreatPicksConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */; };
@@ -107,6 +109,13 @@
 			remoteGlobalIDString = 1F2A613E26BFECF10085133C;
 			remoteInfo = SpotifyVIP;
 		};
+		1F36997B26E397A7005F5E6F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F2A613726BFECF10085133C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F2A613E26BFECF10085133C;
+			remoteInfo = SpotifyVIP;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -133,6 +142,10 @@
 		1F2A616026BFECF20085133C /* SpotifyVIPUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyVIPUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F2A616426BFECF20085133C /* SpotifyVIPUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyVIPUITests.swift; sourceTree = "<group>"; };
 		1F2A616626BFECF20085133C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F36997626E397A7005F5E6F /* SignupEmailTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SignupEmailTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F36997A26E397A7005F5E6F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F36998426E397F1005F5E6F /* SignupEmailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailViewControllerTests.swift; sourceTree = "<group>"; };
+		1F36998E26E39BD1005F5E6F /* SignupEmailInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupEmailInteractorTests.swift; sourceTree = "<group>"; };
 		1F37D8CC26CD235B009344DC /* GreatPicksCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksCollectionViewCell.swift; sourceTree = "<group>"; };
 		1F37D8D526CD458E009344DC /* GreatPicksRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksRouter.swift; sourceTree = "<group>"; };
 		1F37D8DA26CD469B009344DC /* GreatPicksConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreatPicksConfigurator.swift; sourceTree = "<group>"; };
@@ -229,6 +242,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7036AD06637E545F44ADDD /* Pods_SpotifyVIP_SpotifyVIPUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F36997326E397A7005F5E6F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,6 +375,7 @@
 				1F2A614126BFECF10085133C /* SpotifyVIP */,
 				1F2A615826BFECF20085133C /* SpotifyVIPTests */,
 				1F2A616326BFECF20085133C /* SpotifyVIPUITests */,
+				1F36997726E397A7005F5E6F /* SignupEmailTests */,
 				1F2A614026BFECF10085133C /* Products */,
 				773B66AF08A7F84241E13A41 /* Pods */,
 				CA7CDE72B2138E702B1D36A1 /* Frameworks */,
@@ -367,6 +388,7 @@
 				1F2A613F26BFECF10085133C /* SpotifyVIP.app */,
 				1F2A615526BFECF20085133C /* SpotifyVIPTests.xctest */,
 				1F2A616026BFECF20085133C /* SpotifyVIPUITests.xctest */,
+				1F36997626E397A7005F5E6F /* SignupEmailTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -425,6 +447,16 @@
 				1F1B175626CE8429007EAC8C /* FindingMusic */,
 			);
 			path = Presentation;
+			sourceTree = "<group>";
+		};
+		1F36997726E397A7005F5E6F /* SignupEmailTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F36998426E397F1005F5E6F /* SignupEmailViewControllerTests.swift */,
+				1F36998E26E39BD1005F5E6F /* SignupEmailInteractorTests.swift */,
+				1F36997A26E397A7005F5E6F /* Info.plist */,
+			);
+			path = SignupEmailTests;
 			sourceTree = "<group>";
 		};
 		1F37D8D126CD454A009344DC /* Configurator */ = {
@@ -853,6 +885,24 @@
 			productReference = 1F2A616026BFECF20085133C /* SpotifyVIPUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		1F36997526E397A7005F5E6F /* SignupEmailTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F36997F26E397A7005F5E6F /* Build configuration list for PBXNativeTarget "SignupEmailTests" */;
+			buildPhases = (
+				1F36997226E397A7005F5E6F /* Sources */,
+				1F36997326E397A7005F5E6F /* Frameworks */,
+				1F36997426E397A7005F5E6F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F36997C26E397A7005F5E6F /* PBXTargetDependency */,
+			);
+			name = SignupEmailTests;
+			productName = SignupEmailTests;
+			productReference = 1F36997626E397A7005F5E6F /* SignupEmailTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -870,6 +920,10 @@
 						TestTargetID = 1F2A613E26BFECF10085133C;
 					};
 					1F2A615F26BFECF20085133C = {
+						CreatedOnToolsVersion = 12.1;
+						TestTargetID = 1F2A613E26BFECF10085133C;
+					};
+					1F36997526E397A7005F5E6F = {
 						CreatedOnToolsVersion = 12.1;
 						TestTargetID = 1F2A613E26BFECF10085133C;
 					};
@@ -891,6 +945,7 @@
 				1F2A613E26BFECF10085133C /* SpotifyVIP */,
 				1F2A615426BFECF20085133C /* SpotifyVIPTests */,
 				1F2A615F26BFECF20085133C /* SpotifyVIPUITests */,
+				1F36997526E397A7005F5E6F /* SignupEmailTests */,
 			);
 		};
 /* End PBXProject section */
@@ -934,6 +989,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		1F2A615E26BFECF20085133C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F36997426E397A7005F5E6F /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -1124,6 +1186,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1F36997226E397A7005F5E6F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F36998F26E39BD1005F5E6F /* SignupEmailInteractorTests.swift in Sources */,
+				1F36998526E397F1005F5E6F /* SignupEmailViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -1136,6 +1207,11 @@
 			isa = PBXTargetDependency;
 			target = 1F2A613E26BFECF10085133C /* SpotifyVIP */;
 			targetProxy = 1F2A616126BFECF20085133C /* PBXContainerItemProxy */;
+		};
+		1F36997C26E397A7005F5E6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F2A613E26BFECF10085133C /* SpotifyVIP */;
+			targetProxy = 1F36997B26E397A7005F5E6F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -1389,6 +1465,46 @@
 			};
 			name = Release;
 		};
+		1F36997D26E397A7005F5E6F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				INFOPLIST_FILE = SignupEmailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkilmer.SignupEmailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotifyVIP.app/SpotifyVIP";
+			};
+			name = Debug;
+		};
+		1F36997E26E397A7005F5E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JA3K44V4L9;
+				INFOPLIST_FILE = SignupEmailTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.mkilmer.SignupEmailTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SpotifyVIP.app/SpotifyVIP";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1424,6 +1540,15 @@
 			buildConfigurations = (
 				1F2A617026BFECF20085133C /* Debug */,
 				1F2A617126BFECF20085133C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F36997F26E397A7005F5E6F /* Build configuration list for PBXNativeTarget "SignupEmailTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F36997D26E397A7005F5E6F /* Debug */,
+				1F36997E26E397A7005F5E6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
