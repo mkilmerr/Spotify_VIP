@@ -1,5 +1,5 @@
 # Spotify Clone :metal:
-## Spotify App Clone with VIP Architecture
+## Spotify App Clone with VIP Design Pattern
 
 
 ### Project Images
